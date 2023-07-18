@@ -1,5 +1,6 @@
-body {
-  color: red;
+.body, .body--1 {
+  background-color: background-color rgba(244, 244, 244, 0.9568627451);
+  width: width 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
