@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/favicon_bits.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+<body class="body--2">
+    <header class="body__encabezado--2">
+        <div class="encabezado__logo--2">
+            <img class="logo__imagen--2" src="../assets/logos/coffemex_logo.png" alt="Logo de Coffemex Comedor industrial">
+        </div>
+ 
+        <nav class="encabezado__nav--2">
+           <ul class="nav__lista--2">
+
+                <li class="lista__item1--2">
+                    <a class="item__enlace--2" href="../index.html">
+                        <img class="enlace__ico--2" src="../assets/icons/inicio.png" alt="Icono de inicio">
+                    </a>
+                </li>
+                <li class="lista__item2-2">
+                    <a class="item__enlace--2" href="./coffemexcomedorindustrial.html">
+                        <img class="enlace__ico--2" src="../assets/icons/coffemex.png" alt="Icono de un chef">
+                    </a>
+                </li>
+                <li class="lista__item3--2">
+                    <a class="item__enlace--2" href="./yummybanquetes.html">
+                        <img class="enlace__ico--2" src="../assets/icons/yummy.png" alt="Icono de cubiertos">
+                    </a>
+                </li>
+                <li class="lista__item4--2">
+                    <a class="item__enlace--2" href="./bitsdulcesrecuerdos.html">
+                        <img class="enlace__ico--2" src="../assets/icons/bits.png" alt="Icono de dulces">
+                    </a>
+                </li>
+                <li class="lista__item5--2">
+                        <img class="enlace__ico--2" src="../assets/icons/contacto.png" alt="Icono de contacto">
+                </li>
+            </ul>
+        </nav>
+
+        <div class="encabezado__titulo--2">
+            <h1>¿Quieres contactarte con nosotros?</h1> 
+        </div>
+        <div class="encabezado__parrafo--2">
+            <p>Rellena el siguiente formulario.</p>
+        </div> 
+     </header> 
+
+    <main class="body__main--2">
+            <form class="main__form" action="..." method="post" enctype="...">
+                <fieldset class="form__field--1">
+                    <legend class="field__legend">Datos personales</legend>
+
+                    <div class="field__nombre">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Ingrese nombre completo" required autocomplete="off">
+                    </div>
+
+                    <div class="field__edad">
+                        <label for="edad">Edad</label>
+                        <input id="edad" name="edad" type="number" min="18" max="200">
+                    </div>
+                    
+                    <div class="field__email">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" required autocomplete="off">
+                    </div>
+
+                    <div class="field__tel">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="+00 000 000 0000" autocomplete="off">
+                    </div>
+
+                    <div class="field__estado">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                            <option value="dgo">Durango</option>
+                            <option value="coah">Coahuila</option>
+                        </select>
+                    </div>
+
+                    <div class="field__ciudad">
+                        <label for="ciudad">Ciudad</label>
+                        <select name="ciudad" id="ciudad">
+                            <option value="lerdo">Lerdo</option>
+                            <option value="gomezpalacio">Gómez palacio</option>
+                            <option value="torreon">Torreón</option>
+                            <option value="matamoros">Matamoros</option>
+                        </select>
+                    </div>
+            </fieldset>
+
+            <fieldset class="form__field--2">
+                <legend class="field__legend">Información del evento</legend>
+
+                <div class="field__servicio">
+                    <label for="servicio">¿Cuál servicio necesitas?</label>
+                    <select name="servicio" id="servicio" required>
+                        <option value="yummy">Yummy banquetes</option>
+                        <option value="bits">Bits mesas de dulces</option>
+                    </select>
+                </div> 
+
+                <div class="field__evento">
+                    <label for="evento">¿Cuál es el tipo de evento?</label>
+                    <textarea name="evento" id="evento" cols="30" rows="10" placeholder="Recuerda que solo damos servicio en bodas, graduaciones y aniversarios. Para mayor seguridad especifica el tipo de evento para analizar si lo aceptamos." required></textarea>
+                </div>
+
+                <div class="field__fecha">
+                    <label for="fecha">Fecha del evento</label>
+                    <input id="fecha" name="fecha" type="date" required>
+                    <input id="hora" name="hora" type="time">
+                </div>
+
+                <div class="field__asistentes">
+                    <label for="asistencia">Cantidad de personas que asistirán al evento</label>
+                    <input name="asistencia" id="asistencia" type="number" min="1" max="100000" required> 
+                </div>
+
+                <div class="field__comentarios">
+                    <label for="comentario">Deja tu comentario</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tus dudas, comentarios o más información del servicio que deseas recibir. Por ejemplo dudas sobre cotizaciones, o preguntas sobre los alimentos."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="form__field--3">
+                <legend class="field__legend">Finalizar formulario</legend>
+                <input class="field__cancelar" type="button" id="cancelar" name="cancelar" value="Cancelar">
+                <input class="field__borrar" type="reset" name="borrar" id="borrar">
+                <input class="field__enviar" type="submit" name="enviar" id="enviar">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="body__footer--2">
+            <p class="footer__p">Sitio en proceso de creación. Creado por Jahyire Antunez.</p>
+    </footer>
+    
+</body>
+</html>
