@@ -1,21 +1,20 @@
 // colores
-$colorfondo: background-color #F4F4F4F4;
-$colorfondomain: background-color #000000;
+$colorfondo:  #F4F4F4F4;
+$colorfondomain:  #000000;
 
 // Medidas
-$ancho100: width 100%;
-$ancho30: width 30vh;
+$ancho100: 100%;
+$ancho30: 30vh;
 
 
 // estructuras grid
-$medida5-90-5gridcol: grid-template-columns 5% 90% 5%;
-$medida100gridcol: grid-template-columns 100%;
+$medida5-90-5gridcol: 5% 90% 5%;
+$medida100gridcol: 100%;
 
 
 // texto
-$alineaciontexto: text-aling center;
-$tamañoletra2: font-size 2em;
+$tamañoletra: 1em;
 
 // alineacion
-$marginauto: margin-left auto
-margin-right auto;
+$marginauto: auto;
+$alineacion: center;
