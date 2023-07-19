@@ -1,13 +1,15 @@
 .body__main--1 {
     background-color: $colorfondonegro;
-    grid-area: main;
+    grid: {
+        area: main;
+        template-columns: 100%;
+        template-rows: 50vh 50vh;
+        template-areas:
+        "main1h2 main1h2"
+        "main1p main1p"
+        ;
+    }
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50vh 50vh;
-    grid-template-areas:
-    "main1h2 main1h2"
-    "main1p main1p"
-    ;
     align-items: $alineacioncentro;
     color: $colorfondo;
     .main__h2--1 {

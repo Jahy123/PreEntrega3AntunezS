@@ -1,14 +1,17 @@
 .body__encabezado {
     background-color: $colorfondo;
     height: 99vh;
-    grid-area: header;
+    grid: {
+        area: header;
+        template-columns: $gridtcol;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "nav logo ."
+        "nav h1 ."
+        ;
+    }
     display: grid;
-    grid-template-columns: $gridtcol;
-    grid-template-rows: 49vh 50vh;
-    grid-template-areas:
-    "nav logo ."
-    "nav h1 ."
-    ;
+    
     .encabezado__logo {
         background-color: $colorfondo;
         grid-area: logo;
@@ -76,8 +79,5 @@
         text-align: $alineacioncentro;
         justify-content: $alineacioncentro;
         padding: $padding100/50; 
-        h1 {
-
-        }
     }
 }

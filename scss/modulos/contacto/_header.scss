@@ -1,14 +1,16 @@
 .body__encabezado--2 {
     background-color: $colorfondo;
     height: 99vh;
-    grid-area: header2;
+    grid: {
+        area: header2;
+        template-columns: 5% 45% 45% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "nav2 logo2 logo2 ."
+        "nav2 tit2 parr2 ."
+        ;
+    }
     display: grid;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-rows: 49vh 50vh;
-    grid-template-areas:
-    "nav2 logo2 logo2 ."
-    "nav2 tit2 parr2 ."
-    ;
     .encabezado__logo--2 {
         background-color: $colorfondo;
         grid-area: logo2;

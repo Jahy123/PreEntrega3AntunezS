@@ -1,16 +1,19 @@
 .body__main {
     background-color: $colorfondonegro;
     color: $colortexto;
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25vh 30vh 45vh;
-    grid-template-areas:
-    "mainh2 mainh2"
-    "mainp mainp"
-    "mainimg mainimg"
-    ;
     align-items: $alineacioncentro;
+    display: grid;
+    grid: {
+        area: main;
+        template-columns: 100%;
+        template-rows: 25vh 30vh 45vh;
+        template-areas:
+        "mainh2 mainh2"
+        "mainp mainp"
+        "mainimg mainimg"
+    ;
+    }
+    
     .main__h2 {
         grid-area: mainh2;
         font-size: $tamatexto1*3;
@@ -31,8 +34,10 @@
         grid-area: mainimg;
         width: $ancho50;
         padding: $padding100/100;
-        margin-left: $mariginauto;
-        margin-right: $mariginauto;
+        margin: {
+            left: $mariginauto;
+            right: $mariginauto;
+        }
         .imagen__img {
             width: $ancho100;
         }
