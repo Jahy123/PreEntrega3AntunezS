@@ -1,0 +1,14 @@
+.body__main--1 {
+    @include estr-main-cyb;
+    .main__h2--1 {
+        grid-area: main1h2;
+        font-size: $tamatexto1*2;
+        @include estr-maintxt-icyb;
+        
+    }
+    .main__p--1 {
+        grid-area: main1p;
+        font-size: $tamatexto1*2;
+        @include estr-maintxt-icyb;
+    }
+}
