@@ -5,8 +5,8 @@
     display: grid;
     grid: {
         template-columns: $gridtcol;
-        emplate-rows: 99vh 100vh 10vh;
-        emplate-areas:
+        template-rows: 99vh 100vh 10vh;
+        template-areas:
         "header header header"
         ". main ."
         "footer footer footer"

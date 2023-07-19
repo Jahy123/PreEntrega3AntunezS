@@ -57,7 +57,7 @@
   width: 100%;
   padding: 10%;
 }
-.body__encabezado .encabezado__nav .nav__lista__item--4 .item__enlace__ico {
+.body__encabezado .encabezado__nav .nav__lista .lista__item--4 .item__enlace .enalce__ico {
   width: 100%;
   padding: 10%;
 }
@@ -128,8 +128,8 @@
   height: 209vh;
   display: grid;
   grid-template-columns: 5% 90% 5%;
-  grid-emplate-rows: 99vh 100vh 10vh;
-  grid-emplate-areas: "header header header" ". main ." "footer footer footer";
+  grid-template-rows: 99vh 100vh 10vh;
+  grid-template-areas: "header header header" ". main ." "footer footer footer";
   grid-row: 0.5%;
   margin-top: 0.5%;
 }
