@@ -1,16 +1,18 @@
 .body__encabezado {
     background-color: $colorfondo;
     height: 99vh;
+    display: grid;
     grid: {
         area: header;
         template-columns: $gridtcol;
         template-rows: 49vh 50vh;
         template-areas:
         "nav logo ."
-        "nav h1 ."
+        "nav h1 ." 
+        ;
     }
-    display: grid;
-    ;
+    
+   
     .encabezado__logo {
         background-color: $colorfondo;
         grid-area: logo;

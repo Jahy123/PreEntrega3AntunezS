@@ -1,4 +1,12 @@
-@mixin estrbodygridicyb {
+@mixin reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    list-style-type: none;
+    border: none;
+}
+@mixin estr-body-grid-icyb {
     background-color: $colorfondo;
 
     width: $ancho100;
@@ -21,6 +29,50 @@
     
 }
 
+@mixin estr-header-icyb {
+    background-color: $colorfondo;
+    height: 99vh;
+    display: grid;
+    grid: {
+        area: header;
+        template-columns: $gridtcol;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "nav logo ."
+        "nav h1 ."
+        ;
+    }
+    
+    
+}
+@mixin estr-headerlogo-icyb {
+    background-color: $colorfondo;
+    grid-area: logo;
+    text-align: $alineacioncentro;
+    padding: 10vh;
+}
+@mixin estr-headernav-icyb {
+    background-color: $colorfondo;
+    grid-area: nav;
+    position: fixed;
+    top: 25vh;
+    width: $ancho100/20;
+    text-align: $alineacioncentro;
+}
+@mixin estr-navicon-icyb {
+    width: $ancho100;
+    padding: $padding100/10;
+}
+@mixin estr-headertit-icyb {
+    display: flex;
+    align-items: $alineacioncentro;
+    font-size: $tamatexto1*2;
+    background-color: $colorfondo;
+    grid-area: h1;
+    text-align: $alineacioncentro;
+    justify-content: $alineacioncentro;
+    padding: $padding100/50;
+}
 @mixin estr-footer-grid-icyb {
     display: flex;
     align-items: $alineacioncentro;

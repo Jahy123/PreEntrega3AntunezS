@@ -1,0 +1,6 @@
+.body__footer {
+    @include estr-footer-grid-icyb;
+    p {
+        font-size: $tamatexto1*1.5;
+    }
+}

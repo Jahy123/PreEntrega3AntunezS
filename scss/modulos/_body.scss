@@ -1,0 +1,6 @@
+* {
+    @include reset;
+}
+.body {
+    @include estr-body-grid-icyb;
+}
