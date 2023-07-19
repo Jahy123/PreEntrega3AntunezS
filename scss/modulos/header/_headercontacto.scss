@@ -1,0 +1,25 @@
+.body__encabezado--2 {
+    @include estr-header-c;
+    .encabezado__logo--2 {
+        @include estr-headerlogo-c;
+        .logo__imagen--2 {
+            width: $ancho30;
+        }
+    }
+    .encabezado__nav--2 {
+        @include estr-headernav-c;
+        .nav__lista--2 {
+            .lista__item--2 {
+                .item__enlace--2 {
+                    @include estr-navicon-icybc;
+                }
+            }
+        }
+    }
+    .encabezado__titulo--2 {
+        @include estr-headertit-c;
+    }
+    .encabezado__parrafo--2 {
+        @include estr-headerpa-c;
+    }
+}

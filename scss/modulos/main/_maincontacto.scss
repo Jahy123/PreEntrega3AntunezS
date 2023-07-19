@@ -1,0 +1,57 @@
+.body__main--2 {
+    @include estr-main-c;
+    .main__form {
+        @include estr-mainform-c;
+        
+        .form__field--1 {
+            grid-area: field1;
+            @include estr-mainfield-c;
+            .field__legend {
+                font-size: $tamatexto1*1.5;
+            }
+            .field__nombre {
+                @include estr-field-c;
+            }
+            .field__edad {
+                @include estr-field-c;
+            }
+            .field__email {
+                @include estr-field-c;
+            }
+            .field__tel {
+                @include estr-field-c;
+            }
+            .field__estado {
+                @include estr-field-c;
+            }
+            .field__ciudad {
+                @include estr-field-c;
+            }
+        }
+        .form__field--2 {
+            grid-area: field2;
+            @include estr-mainfield-c;
+            .field__servicio {
+                @include estr-field-c;
+            }
+            .field__evento {
+                @include estr-field-c;
+
+            }
+            .field__fecha {
+                @include estr-field-c;
+
+            }
+            .field__asistentes {
+                @include estr-field-c;
+            }
+            .field__comentarios {
+                @include estr-field-c;
+            }
+        }
+        .form__field--3 {
+            grid-area: field3;
+            @include estr-mainfieldf-c;
+        }
+    }
+}
