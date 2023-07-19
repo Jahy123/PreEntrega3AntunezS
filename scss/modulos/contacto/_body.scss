@@ -1,0 +1,15 @@
+.body--2 {
+    background-color: $colorfondo;
+    width: $ancho100;
+    height: 209vh;
+    display: grid;
+    grid-template-columns: $gridtcol;
+    grid-template-rows: 99vh 200vh 10vh;
+    grid-template-areas:
+    "header2 header2 header2"
+    ". main2 ."
+    "footer2 footer2 footer2"
+    ;
+    margin-top: .5%;
+    grid-row: .5%;
+}

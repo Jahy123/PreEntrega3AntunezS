@@ -1,0 +1,93 @@
+.body__encabezado--2 {
+    background-color: $colorfondo;
+    height: 99vh;
+    grid-area: header2;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 49vh 50vh;
+    grid-template-areas:
+    "nav2 logo2 logo2 ."
+    "nav2 tit2 parr2 ."
+    ;
+    .encabezado__logo--2 {
+        background-color: $colorfondo;
+        grid-area: logo2;
+        text-align: $alineacioncentro;
+        padding: 10vh;
+        .logo__imagen--2 {
+            width: $ancho30;
+
+        }
+    }
+    .encabezado__nav--2 {
+        background-color: $colorfondo;
+        grid-area: nav2;
+        position: fixed;
+        top: 25vh;
+        width: $ancho100/20;
+        text-align: $alineacioncentro;
+        .nav__lista--2 {
+            .lista__item1--2 {
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        width: $ancho100;
+                        padding: $padding100/10;
+                    }
+                }
+            }
+            .lista__item2--2 {
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        width: $ancho100;
+                        padding: $padding100/10;
+                    }
+                }
+            }
+            .lista__item3--2 {
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        width: $ancho100;
+                        padding: $padding100/10;
+                    }
+                }
+            }
+            .lista__item4--2 {
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        width: $ancho100;
+                        padding: $padding100/10;
+                    }
+                }
+            }
+            .lista__item5--2 {
+                .enlace__ico--2 {
+                    width: $ancho100;
+                    padding: $padding100/10;
+                    }
+            }      
+            
+            
+        }
+    }
+    .encabezado__titulo--2 {
+        display: flex;
+        align-items: $alineacioncentro;
+        font-size: $tamatexto1*2;
+        background-color: $colorfondo;
+        grid-area: tit2;
+        text-align: $alineacioncentro;
+        justify-content: $alineacioncentro;
+        padding: $padding100/50; 
+        
+    }
+    .encabezado__parrafo--2 {
+        display: flex;
+        align-items: $alineacioncentro;
+        font-size: $tamatexto1*2;
+        background-color: $colorfondo;
+        grid-area: parr2;
+        text-align: $alineacioncentro;
+        justify-content: $alineacioncentro;
+        padding: $padding100/50; 
+    }
+}

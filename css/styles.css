@@ -427,4 +427,230 @@
   font-size: 1.5em;
 }
 
+.body--2 {
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 209vh;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 99vh 200vh 10vh;
+  grid-template-areas: "header2 header2 header2" ". main2 ." "footer2 footer2 footer2";
+  margin-top: 0.5%;
+  grid-row: 0.5%;
+}
+
+.body__encabezado--2 {
+  background-color: #F4F4F4;
+  height: 99vh;
+  grid-area: header2;
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 49vh 50vh;
+  grid-template-areas: "nav2 logo2 logo2 ." "nav2 tit2 parr2 .";
+}
+.body__encabezado--2 .encabezado__logo--2 {
+  background-color: #F4F4F4;
+  grid-area: logo2;
+  text-align: center;
+  padding: 10vh;
+}
+.body__encabezado--2 .encabezado__logo--2 .logo__imagen--2 {
+  width: 30vh;
+}
+.body__encabezado--2 .encabezado__nav--2 {
+  background-color: #F4F4F4;
+  grid-area: nav2;
+  position: fixed;
+  top: 25vh;
+  width: 5%;
+  text-align: center;
+}
+.body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item1--2 .item__enlace--2 .enlace__ico--2 {
+  width: 100%;
+  padding: 10%;
+}
+.body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item2--2 .item__enlace--2 .enlace__ico--2 {
+  width: 100%;
+  padding: 10%;
+}
+.body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item3--2 .item__enlace--2 .enlace__ico--2 {
+  width: 100%;
+  padding: 10%;
+}
+.body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item4--2 .item__enlace--2 .enlace__ico--2 {
+  width: 100%;
+  padding: 10%;
+}
+.body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item5--2 .enlace__ico--2 {
+  width: 100%;
+  padding: 10%;
+}
+.body__encabezado--2 .encabezado__titulo--2 {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  background-color: #F4F4F4;
+  grid-area: tit2;
+  text-align: center;
+  justify-content: center;
+  padding: 2%;
+}
+.body__encabezado--2 .encabezado__parrafo--2 {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  background-color: #F4F4F4;
+  grid-area: parr2;
+  text-align: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.body__main--2 {
+  background-color: #000000;
+  grid-area: main2;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200vh;
+  grid-template-areas: "mainform";
+  align-items: center;
+  color: #F4F4F4;
+}
+.body__main--2 .main__form {
+  grid-area: mainform;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 170vh 30vh;
+  grid-template-areas: "field1 field2" "field3 field3";
+}
+.body__main--2 .main__form .form__field--1 {
+  grid-area: field1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
+  background-color: #000000;
+  color: #F4F4F4;
+}
+.body__main--2 .main__form .form__field--1 .field__legend {
+  font-size: 1.5em;
+}
+.body__main--2 .main__form .form__field--1 .field__nombre {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--1 .field__edad {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--1 .field__email {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--1 .field__tel {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--1 .field__estado {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--1 .field__ciudad {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--2 {
+  grid-area: field2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
+  background-color: #000000;
+  color: #F4F4F4;
+}
+.body__main--2 .main__form .form__field--2 .field__legend {
+  font-size: 1.5em;
+}
+.body__main--2 .main__form .form__field--2 .field__servicio {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--2 .field__evento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--2 .field__fecha {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--2 .field__asistentes {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--2 .field__comentarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--3 {
+  background-color: #000000;
+  grid-area: field3;
+  text-align: center;
+  padding: 1%;
+}
+.body__main--2 .main__form .form__field--3 .field__legend {
+  font-size: 1.5em;
+}
+.body__footer--2 {
+  background-color: #F4F4F4;
+  grid-area: footer2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body__footer--2 .footer__p {
+  font-size: 1.5em;
+}
+
 /*# sourceMappingURL=styles.css.map */

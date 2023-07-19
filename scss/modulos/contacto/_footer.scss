@@ -1,0 +1,10 @@
+.body__footer--2 {
+    background-color: $colorfondo;
+    grid-area: footer2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer__p {
+        font-size: $tamatexto1*1.5;
+    }
+}
