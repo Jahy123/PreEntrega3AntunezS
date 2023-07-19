@@ -53,20 +53,22 @@
             }
             .lista__item--4 {
                 .item__enlace {
-                    .enalce__ico {
-                        width: $ancho100;
-                        padding: $padding100/10;
-                    }
-                }
-            }
-            .lista__item--5 {
-                .item__enlace {
                     .enlace__ico {
                         width: $ancho100;
                         padding: $padding100/10;
                     }
                 }
             }
+            .lista__item--5 {
+                .item__enalce {
+                    .enlace__ico {
+                        width: $ancho100;
+                        padding: $padding100/10;
+
+                    }
+                }
+            }
+            
         }
     }
     .encabezado__titulo {
