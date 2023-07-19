@@ -1,0 +1,10 @@
+.body__footer {
+    display: flex;
+    align-items: $alineacioncentro;
+    justify-content: $alineacioncentro;
+    background-color: $colorfondo;
+    grid-area: footer;
+    .footer__p {
+        font-size: $tamatexto1*1.5;
+    }
+}

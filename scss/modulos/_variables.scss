@@ -1,20 +1,22 @@
 // colores
-$colorfondo:  #F4F4F4F4;
-$colorfondomain:  #000000;
+$colorfondo: #F4F4F4;
+$colorfondonegro: #000000;
+$colortexto: #F4F4F4;
 
-// Medidas
+
+// dimensiones 
 $ancho100: 100%;
 $ancho30: 30vh;
+$ancho50: 50vh;
+$padding100: 100%;
 
 
-// estructuras grid
-$medida5-90-5gridcol: 5% 90% 5%;
-$medida100gridcol: 100%;
+// estructuras grid 
+$gridtcol: 5% 90% 5%;
 
+// alineacion 
+$mariginauto: auto;
+$alineacioncentro: center;
 
 // texto
-$tamañoletra: 1em;
-
-// alineacion
-$marginauto: auto;
-$alineacion: center;
+$tamatexto1: 1em;

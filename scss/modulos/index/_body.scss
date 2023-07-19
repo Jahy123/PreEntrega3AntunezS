@@ -6,12 +6,13 @@
     list-style-type: none;
     border: none;
 }
-.body, .body--1 {
+
+.body {
     background-color: $colorfondo;
     width: $ancho100;
     height: 209vh;
     display: grid;
-    grid-template-columns: $medida5-90-5gridcol;
+    grid-template-columns: $gridtcol;
     grid-template-rows: 99vh 100vh 10vh;
     grid-template-areas:
     "header header header"
