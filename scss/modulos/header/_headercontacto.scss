@@ -11,8 +11,13 @@
         .nav__lista--2 {
             .lista__item--2 {
                 .item__enlace--2 {
-                    @include estr-navicon-icybc;
+                    .enlace__ico--2 {
+                        @include estr-navicon-icybc;
+                    }  
                 }
+                .enlace__ico--2 {
+                        @include estr-navicon-icybc;
+                    }
             }
         }
     }

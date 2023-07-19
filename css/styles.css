@@ -171,6 +171,10 @@
   width: 100%;
   padding: 10%;
 }
+.body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item--2 .enlace__ico--2 {
+  width: 100%;
+  padding: 10%;
+}
 .body__encabezado--2 .encabezado__titulo--2 {
   display: flex;
   align-items: center;
