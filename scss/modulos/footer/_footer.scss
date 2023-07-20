@@ -8,6 +8,9 @@
         @include breakpoint500 {
             font-size: .8em;
         }
+        @include breakpoint400 {
+            font-size: .5em;
+        }
         
     }
 }

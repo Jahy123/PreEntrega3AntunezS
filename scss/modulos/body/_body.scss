@@ -13,4 +13,17 @@
         "footer footer footer"
         ;
     }
+    @include breakpoint450 {
+        height: 140vh;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 70vh 60vh 10vh;
+        grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer"
+        ;
+        margin-top: .5%;
+        grid-row: .5%;
+    }
 }

@@ -1,5 +1,8 @@
 .body__main--1 {
     @include estr-main-cyb;
+    @include breakpoint450 {
+         grid-template-rows: 25vh 25vh;
+    }
     .main__h2--1 {
         grid-area: main1h2;
         font-size: $tamatexto1*2;
@@ -9,6 +12,13 @@
         }
         @include breakpoint500 {
             font-size: $tamatexto1;
+        }
+        @include breakpoint450 {
+            font-size: $tamatexto1;
+            padding-bottom: 0;
+        }
+        @include breakpoint400 {
+            font-size: .7em;
         }
         
     }
@@ -21,6 +31,13 @@
         }
         @include breakpoint500 {
             font-size: $tamatexto1;
+        }
+        @include breakpoint450 {
+            font-size: $tamatexto1;
+            padding-top: 0;
+        }
+        @include breakpoint400 {
+            font-size: .6em;
         }
     }
 }
