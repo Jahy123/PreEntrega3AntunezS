@@ -575,7 +575,7 @@
 }
 @media screen and (max-width: 850px) {
   .body__encabezado--2 .encabezado__nav--2 .nav__lista--2 .lista__item1--2 .item__enlace--2 .enlace__ico--2 {
-    width: 50vh;
+    width: 50%;
   }
 }
 @media screen and (max-width: 850px) {

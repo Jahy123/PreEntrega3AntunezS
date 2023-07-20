@@ -56,7 +56,7 @@
                     .enlace__ico--2 {
                         @include estr-navicon-icybc;
                         @include breakpoint850 {
-                            width: $ancho50
+                            width: 50%;
                         }
                     }  
                 }
