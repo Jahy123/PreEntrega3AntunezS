@@ -1,9 +1,12 @@
 @import "./modulos/variables";
+@import "./modulos/mediaqueries/mediaqueries.scss";
 @import "./modulos/mixins";
 @import "./modulos/body/body";
 @import "./modulos/header/header";
 @import "./modulos/main/main";
 @import "./modulos/footer/footer";
+@import "./modulos/body/bodyindex";
+@import "./modulos/header/headerindex";
 @import "./modulos/main/mainindex";
 @import "./modulos/body/bodycontacto";
 @import "./modulos/header/headercontacto";

@@ -1,30 +1,147 @@
 .body__encabezado--2 {
     @include estr-header-c;
+    @include breakpoint850 {
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 33vh 33vh 20vh 13vh;
+        grid-template-areas:
+        ". nav2 ."
+        ". logo2 ."
+        ". tit2 ."
+        ". parr2 ."
+        ;
+    }
+    
     .encabezado__logo--2 {
         @include estr-headerlogo-c;
+        @include breakpoint850 {
+            padding: 2vh;
+        }
         .logo__imagen--2 {
             width: $ancho30;
         }
     }
     .encabezado__nav--2 {
         @include estr-headernav-c;
+        @include breakpoint850 {
+            width: 100%;
+            height: 100%;
+            position: static;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50%;
+            grid-template-areas: 
+            "navlist2"
+            ;
+        }
         .nav__lista--2 {
-            .lista__item--2 {
+            @include breakpoint850 {
+                background-color: #F4F4F4;
+                grid-area: navlist2;
+                display: grid;
+                grid-template-columns: 18% 18% 18% 18% 18%;
+                grid-template-rows: 100%;
+                grid-template-areas: 
+                "listitem1dos listitem2dos listitem3dos listitem4dos listitem5dos"
+                ;
+                justify-content: $alineacioncentro;
+                align-items: $alineacioncentro;
+            }
+            .lista__item1--2 {
+                @include breakpoint850 {
+                    background-color: #F4F4F4;
+                    grid-area: listitem1dos;
+                    padding: 2%;
+                }
                 .item__enlace--2 {
                     .enlace__ico--2 {
                         @include estr-navicon-icybc;
+                        @include breakpoint850 {
+                            width: 50%;
+                        }
                     }  
+                }
+            }
+            .lista__item2--2 {
+                @include breakpoint850 {
+                    background-color: #F4F4F4;
+                    grid-area: listitem2dos;
+                    padding: 2%;
+                }
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        @include estr-navicon-icybc;
+                        @include breakpoint850 {
+                            width: 50%;
+                        }
+                    }  
+                }
+            }
+            .lista__item3--2 {
+                @include breakpoint850 {
+                    background-color: #F4F4F4;
+                    grid-area: listitem3dos;
+                    padding: 2%;
+                }
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        @include estr-navicon-icybc;
+                        @include breakpoint850 {
+                            width: 50%;
+                        }
+                    }  
+                }
+            }
+            .lista__item4--2 {
+                @include breakpoint850 {
+                    background-color: #F4F4F4;
+                    grid-area: listitem4dos;
+                    padding: 2%;
+                }
+                .item__enlace--2 {
+                    .enlace__ico--2 {
+                        @include estr-navicon-icybc;
+                        @include breakpoint850 {
+                            width: 50%;
+                        }
+                    }  
+                }
+            }
+            .lista__item5--2 {
+                @include breakpoint850 {
+                    background-color: #F4F4F4;
+                    grid-area: listitem5dos;
+                    padding: 2%;
                 }
                 .enlace__ico--2 {
                         @include estr-navicon-icybc;
+                        @include breakpoint850 {
+                            width: 50%;
+                        }
                     }
             }
         }
     }
     .encabezado__titulo--2 {
         @include estr-headertit-c;
+        @include breakpoint1100 {
+            font-size: $tamatexto1*1.5;
+        }
+        @include breakpoint850 {
+            grid-area: tit2;
+            font-size: $tamatexto1*1.2;
+        }
+        @include breakpoint500 {
+            font-size: $tamatexto1;
+        }
     }
     .encabezado__parrafo--2 {
         @include estr-headerpa-c;
+        @include breakpoint850 {
+            padding: 2%;
+            font-size: $tamatexto1*1.2;
+        }
+        @include breakpoint500 {
+            font-size: $tamatexto1;
+        }
     }
 }

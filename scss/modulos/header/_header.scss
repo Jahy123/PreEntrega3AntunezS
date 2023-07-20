@@ -1,24 +1,96 @@
 .body__encabezado {
     @include estr-header-icyb;
+    @include breakpoint850 {
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 33vh 33vh 33vh;
+        grid-template-areas:
+        ". nav ."
+        ". logo ."
+        ". h1 ."
+        ;
+    }
+    @include breakpoint500 {
+        display: grid;
+        grid-template-rows: 10vh 20vh 20vh;
+    }
     
     .encabezado__logo {
         @include estr-headerlogo-icyb;
+        @include breakpoint850 {
+            padding: 2%;
+        }
+        @include breakpoint500 {
+            display: flex;
+            align-items: $alineacioncentro;
+            justify-content: $alineacioncentro;
+            padding: 2vh;
+        }
+        
         .logo__imagen {
             width: $ancho30;
-
+            @include breakpoint850 {
+                grid-area: logo;
+                padding: 2%;
+            }
+            @include breakpoint500 {
+                width: 15vh;
+            }
         }
     }
     .encabezado__nav {
         @include estr-headernav-icyb;
+        @include breakpoint850 {
+            width: 100%;
+            height: 100%;
+            position: static;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50%;
+            grid-template-areas:
+            "navlist"
+            ;
+        }
+        @include breakpoint500 {
+            margin-top: 1.5vh;
+        }
+        
         .nav__lista {
+            @include breakpoint850 {
+                background-color: $colorfondo;
+                grid-area: navlist;
+                display: grid;
+                grid-template-columns: 18% 18% 18% 18% 18%;
+                grid-template-rows: 100%;
+                grid-template-areas: 
+                "listitem1 listitem2 listitem3 listitem4 listitem5"
+                ;
+                justify-content: $alineacioncentro;
+                align-items: $alineacioncentro;
+            }
+
+            
             .lista__item {
                 .enlace__ico {
                     @include estr-navicon-icybc;
+                    @include breakpoint850 {
+                        width: $ancho100/2;            
+                    }
                 }
             } 
         }
     }
     .encabezado__titulo {
         @include estr-headertit-icyb;
+        @include breakpoint850 {
+            grid-area: h1;
+            font-size: $tamatexto1*1.7;
+        }
+        @include breakpoint700 {
+            font-size: $tamatexto1*1.5;
+        }
+        @include breakpoint500 {
+            grid-area: h1;
+            font-size: $tamatexto1;
+        }
     }
 }        

@@ -2,5 +2,12 @@
     @include estr-footer-grid-icyb;
     p {
         font-size: $tamatexto1*1.5;
+        @include breakpoint700 {
+            font-size: $tamatexto1;
+        }
+        @include breakpoint500 {
+            font-size: .8em;
+        }
+        
     }
 }

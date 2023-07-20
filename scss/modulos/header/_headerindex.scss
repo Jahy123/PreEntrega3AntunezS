@@ -1,0 +1,35 @@
+.lista__item--1 {
+    @include breakpoint850 {
+        background-color: $colorfondo;
+        grid-area: listitem1;
+        padding: 2%;              
+    }
+}
+.lista__item--2 {
+    @include breakpoint850 {
+        background-color: $colorfondo;
+        grid-area: listitem2;
+        padding: 2%;              
+    }
+}
+.lista__item--3 {
+    @include breakpoint850 {
+        background-color: $colorfondo;
+        grid-area: listitem3;
+        padding: 2%;              
+    }
+}
+.lista__item--4 {
+    @include breakpoint850 {
+        background-color: $colorfondo;
+        grid-area: listitem4;
+        padding: 2%;              
+    }
+}
+.lista__item--5 {
+    @include breakpoint850 {
+        background-color: $colorfondo;
+        grid-area: listitem5;
+        padding: 2%;              
+    }
+}

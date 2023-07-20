@@ -2,56 +2,185 @@
     @include estr-main-c;
     .main__form {
         @include estr-mainform-c;
+        @include breakpoint700 {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 70vh 110vh 20vh;
+            grid-template-areas: 
+            "field1 field1"
+            "field2 field2"
+            "field3 field3"
+            ;
+        }
         
         .form__field--1 {
             grid-area: field1;
             @include estr-mainfield-c;
+            @include breakpoint850 {
+                margin: 1%;
+            }
+            @include breakpoint700 {
+                padding: $padding100/100;
+            }
             .field__legend {
                 font-size: $tamatexto1*1.5;
+                @include breakpoint700 {
+                    padding: $padding100/20;
+                    font-size: $tamatexto1;
+                }
+                @include breakpoint500 {
+                    font-size: .9em;
+                }
             }
             .field__nombre {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__edad {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
+
             }
             .field__email {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__tel {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__estado {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__ciudad {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
         }
         .form__field--2 {
             grid-area: field2;
             @include estr-mainfield-c;
+            @include breakpoint850 {
+                margin: 1%;
+            }
+            @include breakpoint700 {
+                padding: $padding100/100;
+            }
+            .field__legend {
+                font-size: $tamatexto1*1.5;
+                @include breakpoint700 {
+                    padding: $padding100/20;
+                    font-size: $tamatexto1;
+                }
+                @include breakpoint500 {
+                    font-size: .9em;
+                }
+            }
             .field__servicio {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__evento {
                 @include estr-field-c;
-
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__fecha {
                 @include estr-field-c;
-
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__asistentes {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
             .field__comentarios {
                 @include estr-field-c;
+                @include breakpoint700 {
+                    margin: 1%;
+                }
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
             }
         }
         .form__field--3 {
             grid-area: field3;
             @include estr-mainfieldf-c;
+            .field__legend {
+                font-size: $tamatexto1*1.5;
+                @include breakpoint700 {
+                    padding: $padding100/20;
+                    font-size: $tamatexto1;
+                }
+                @include breakpoint500 {
+                    font-size: .9em;
+                }
+            }
+            .field__cancelar {
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
+            }
+            .field__borrar {
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
+            }
+            .field__enviar {
+                @include breakpoint500 {
+                    font-size: .8em;
+                }
+            }
         }
     }
 }

@@ -4,11 +4,23 @@
         grid-area: main1h2;
         font-size: $tamatexto1*2;
         @include estr-maintxt-icyb;
+        @include breakpoint700 {
+            font-size: $tamatexto1*1.5;
+        }
+        @include breakpoint500 {
+            font-size: $tamatexto1;
+        }
         
     }
     .main__p--1 {
         grid-area: main1p;
         font-size: $tamatexto1*2;
         @include estr-maintxt-icyb;
+        @include breakpoint700 {
+            font-size: $tamatexto1*1.5;
+        }
+        @include breakpoint500 {
+            font-size: $tamatexto1;
+        }
     }
 }

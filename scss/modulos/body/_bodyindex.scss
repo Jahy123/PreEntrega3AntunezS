@@ -1,7 +1,4 @@
-* {
-    @include reset;
-}
-.body--1 {
+.body {
     @include estr-body-grid-icyb;
     @mixin breakpoint500 {
         width: 100%;

@@ -4,15 +4,44 @@
         grid-area: mainh2;
         font-size: $tamatexto1*3;
         @include estr-maintxt-icyb;
-       
+        @include breakpoint850 {
+            font-size: $tamatexto1*2;
+            padding: 5%;
+        }
+        @include breakpoint700 {
+            font-size: $tamatexto1*1.5;
+            text-align: $alineacioncentro;
+            padding: 5%;
+        }
+        @include breakpoint500 {
+            grid-area: mainh2;
+            font-size: $tamatexto1;
+            text-align: $alineacioncentro;
+            padding: $padding100/20;
+        }
+    
     }
     .main__p {
         grid-area: mainp;
         font-size: $tamatexto1*2;
         @include estr-maintxt-icyb;
+        @include breakpoint850 {
+            font-size: 2em;
+            padding: 5%;
+        }
+        @include breakpoint700 {
+            font-size: $tamatexto1*1.5;
+            text-align: $alineacioncentro; 
+        }
+        @include breakpoint500 {
+            font-size: $tamatexto1;
+        }
     }
     .main__imagen {
         @include estr-mainimg-i;
+        @include breakpoint700 {
+            width: $ancho30;
+        }
         .imagen__img {
             width: $ancho100;
         }
