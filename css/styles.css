@@ -34,13 +34,15 @@
   grid-template-areas: "seccunoindx" "seccdosindx";
 }
 .body .body__footer {
-  background-color: #E9AE27;
-  align-items: center;
-  justify-items: center;
   display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #E9AE27;
   grid-area: footer;
   grid-template-columns: 100%;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 10vh 10vh;
   grid-template-areas: "footp" "footdrs";
 }
 
@@ -79,14 +81,14 @@
   padding: 2%;
 }
 
-.main1__seccionunoi {
+.maini__seccionunoi {
   display: grid;
   grid-area: seccunoindx;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   grid-template-areas: "seccunoindxtxt seccunoindximg";
 }
-.main1__seccionunoi .seccionunoi__textoi {
+.maini__seccionunoi .seccionunoi__textoi {
   grid-area: seccunoindxtxt;
   padding: 10%;
   flex-direction: column;
@@ -96,15 +98,15 @@
   justify-content: center;
   text-align: center;
 }
-.main1__seccionunoi .seccionunoi__textoi .textoi__subi {
+.maini__seccionunoi .seccionunoi__textoi .textoi__subi {
   font-size: 2.5em;
   padding: 2%;
 }
-.main1__seccionunoi .seccionunoi__textoi .textoi__pi {
+.maini__seccionunoi .seccionunoi__textoi .textoi__pi {
   font-size: 1.5em;
   padding: 2%;
 }
-.main1__seccionunoi .seccionunoi__imageni {
+.maini__seccionunoi .seccionunoi__imageni {
   grid-area: seccunoindximg;
   padding: 10%;
   display: flex;
@@ -113,29 +115,30 @@
   justify-content: center;
   text-align: center;
 }
-.main1__seccionunoi .seccionunoi__imageni .imagen1__img1 {
+.maini__seccionunoi .seccionunoi__imageni .imageni__imgi {
   width: 100%;
   border-radius: 1%;
 }
 
-.main1__secciondosi {
+.maini__secciondosi {
   background-color: #F4F4F4;
   display: grid;
-  grid-area: seccunoindx;
+  grid-area: seccdosindx;
   grid-template-columns: 100%;
   grid-template-rows: 25% 75%;
   grid-template-areas: "seccdosindxsub" "seccdosindxserv";
 }
-.main1__secciondosi .secciondosi__subi {
+.maini__secciondosi .secciondosi__subi {
   grid-area: seccdosindxsub;
   font-size: 2.5em;
+  color: #000000;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   text-align: center;
 }
-.main1__secciondosi .secciondosi__serviciosi {
+.maini__secciondosi .secciondosi__serviciosi {
   display: grid;
   grid-area: seccdosindxserv;
   grid-template-columns: 30% 30% 30%;
@@ -145,8 +148,7 @@
   align-items: center;
   gap: 1%;
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff {
-  grid-area: coff;
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -154,7 +156,7 @@
   grid-area: coff;
   background-image: url(../assets/images/fondocoff.webp);
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff .enlacei__urli {
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff .enlacei__urli {
   width: 100%;
   height: 100%;
   display: flex;
@@ -164,12 +166,14 @@
   text-align: center;
   font-size: 1.5em;
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff .enlacei__urli .urli__imageni {
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff .enlacei__urli .urli__imageni {
   width: 50%;
-  display: none;
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm {
-  grid-area: coff;
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--coff .enlacei__urli .urli__imageni .imageni__imgi {
+  width: 100%;
+  border-radius: 1%;
+}
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -177,7 +181,7 @@
   grid-area: yumm;
   background-image: url(../assets/images/fondoyumm.webp);
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm .enlacei__urli {
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm .enlacei__urli {
   width: 100%;
   height: 100%;
   display: flex;
@@ -187,12 +191,14 @@
   text-align: center;
   font-size: 1.5em;
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm .enlacei__urli .urli__imageni {
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm .enlacei__urli .urli__imageni {
   width: 50%;
-  display: none;
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits {
-  grid-area: coff;
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--yumm .enlacei__urli .urli__imageni .imageni__imgi {
+  width: 100%;
+  border-radius: 1%;
+}
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -200,7 +206,7 @@
   grid-area: bits;
   background-image: url(../assets/images/fondobits.webp);
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits .enlacei__urli {
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits .enlacei__urli {
   width: 100%;
   height: 100%;
   display: flex;
@@ -210,13 +216,58 @@
   text-align: center;
   font-size: 1.5em;
 }
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits .enlacei__urli:hover {
-  backdrop-filter: blur(30px);
-  backdrop-filter: invert(40%);
-}
-.main1__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits .enlacei__urli .urli__imageni {
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits .enlacei__urli .urli__imageni {
   width: 50%;
-  display: none;
+}
+.maini__secciondosi .secciondosi__serviciosi .serviciosi__enlacei--bits .enlacei__urli .urli__imageni .imageni__imgi {
+  width: 100%;
+  border-radius: 1%;
+}
+
+.footer__sub {
+  grid-area: footp;
+  font-size: 1em;
+}
+
+.footer__derechosautori {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  font-size: 0.75em;
+  grid-area: footdrs;
+  grid-template-columns: 100%;
+  grid-template-rows: 3vh 7vh;
+  grid-template-areas: "drcsub" "drcparr";
+}
+.footer__derechosautori .derechosautori__subi {
+  grid-area: drcsub;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer__derechosautori .derechosautori__parrafosi {
+  font-size: 1em;
+  grid-area: drcparr;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  grid-template-areas: "drcpuno drcpdos drcptres";
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer__derechosautori .derechosautori__parrafosi .parrafosi__pi--1 {
+  grid-area: drcpuno;
+}
+.footer__derechosautori .derechosautori__parrafosi .parrafosi__pi--2 {
+  grid-area: drcpdos;
+}
+.footer__derechosautori .derechosautori__parrafosi .parrafosi__pi--3 {
+  grid-area: drcptres;
 }
 
 /*# sourceMappingURL=styles.css.map */

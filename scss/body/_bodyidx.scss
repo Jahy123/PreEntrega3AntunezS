@@ -4,9 +4,10 @@
         @include estr-body-header-i;
     }
     .body__maini {
-        @include estr-body-main-i
+        @include estr-body-main-i;
     }
     .body__footer {
-        @include estr-body-footer-i
+        @include center-grid;
+        @include estr-body-footer-i;
     }
 }

@@ -52,13 +52,10 @@
 }
 @mixin estr-body-footer-i {
     background-color: $colorfooterindx;
-    align-items: center;
-    justify-items: center;
-    display: grid;
     grid: {
         area: footer;
         template-columns:  100%;
-        template-rows: 40% 60%;
+        template-rows: 10vh 10vh;
         template-areas:
         "footp"
         "footdrs"
@@ -87,7 +84,7 @@
     background-color: $colormainseccdosindx;
     display: grid;
     grid: {
-        area: seccunoindx;
+        area: seccdosindx;
         template-columns:  100%;
         template-rows: 25% 75%;
         template-areas:
@@ -110,10 +107,47 @@
     align-items: center;
     gap: 1%;
 }
+
+@mixin estr-foot-dra-i {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    font-size: $parrafo-font-size/2;
+    grid: {
+        area: footdrs;
+        template-columns: 100%;
+        template-rows: 3vh 7vh;
+        template-areas:
+        "drcsub"
+        "drcparr"
+        ;
+    }
+}
+@mixin estr-foot-dra-parr-i {
+    font-size: $parrafo-font-size/1.5;
+    grid: {
+        area: drcparr;
+        template-columns: 33% 33% 33%;
+        template-rows: 100%;
+        template-areas:
+        "drcpuno drcpdos drcptres"
+        ;
+    }
+}
 // posicionamiento
     // flex
 @mixin center-flex {
     display: flex;
+    align: {
+        items: center;
+        content: center;
+    }
+    justify-content: center;
+    text-align: center;
+
+}
+@mixin center-grid{
+    display: grid;
     align: {
         items: center;
         content: center;
@@ -129,7 +163,6 @@
 }
 // dimension apartado servicios
 @mixin servi-enlaces-i {
-    grid-area: coff;
     width: 100%;
     height: 100%;
     background: {
