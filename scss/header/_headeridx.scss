@@ -1,0 +1,53 @@
+.encabezado__logo {
+    grid-area: logo;
+    text-align: center;
+    padding: 5%;
+    .logo__imagen {
+        width: 30vh;
+    }
+}
+.encabezado__nav {
+    @include estr-header-nav-i;
+    .nav__lista {
+        .lista__item {
+            .item__ico {
+                @include tamiconosnav;
+            }
+        }
+        .lista__item {
+            .item__enlace {
+                .enlace__ico {
+                    @include tamiconosnav;
+                }
+            }
+        }
+        .lista__item {
+            .item__enlace {
+                .enlace__ico {
+                    
+                }
+            }
+        }
+        .lista__item {
+            .item__enlace {
+                .enlace__ico {
+                    
+                }
+            }
+        }
+        .lista__item {
+            .item__enlace {
+                .enlace__ico {
+                    
+                }
+            }
+        }
+    }
+
+}
+.encabezado__titulo {
+    grid-area: titulo;
+    @include center-flex;
+    font-size: $titulo-font-size;
+    padding: 2%; 
+}

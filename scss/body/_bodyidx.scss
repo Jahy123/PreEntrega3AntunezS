@@ -1,0 +1,12 @@
+.body {
+    @include estr-body-i;
+    .body__encabezado {
+        @include estr-body-header-i;
+    }
+    .body__maini {
+        @include estr-body-main-i
+    }
+    .body__footer {
+        @include estr-body-footer-i
+    }
+}

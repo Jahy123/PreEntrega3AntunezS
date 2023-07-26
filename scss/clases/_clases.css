@@ -1,0 +1,1011 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+}
+.body {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 319vh;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 99vh 200vh 20vh ;
+    grid-template-areas:
+    "headerindx headerindx headerindx"
+    ". mainindx ."
+    "footer footer footer"
+    ;
+}
+/*---------------------- header --------------------*/
+.body__encabezado {
+    grid-area: headerindx;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 49vh 50vh;
+    grid-template-areas:
+    "nav logo ."
+    "nav titulo ."
+    ;
+}
+.encabezado__logo {
+    grid-area: logo;
+    text-align: center;
+    padding: 5%;
+}
+.logo__imagen {
+    width: 30vh;
+}
+.encabezado__nav {
+    grid-area: nav;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+.item__ico, .enlace__ico {
+    width: 100%;
+    padding: 10%;
+ }
+.encabezado__titulo {
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    padding: 2%; 
+}
+
+/*----------------------- main --------------------- */
+.body__maini {
+    grid-area: mainindx;
+    background-color: black;
+    color: #F4F4F4;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh 100vh;
+    grid-template-areas:
+    "seccunoindx"
+    "seccdosindx"
+    ;
+}
+            /*--- seccion uno de main ---*/ 
+.maini__seccionunoi {
+    grid-area: seccunoindx;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "seccunoindxtxt seccunoindximg"
+    ;
+}
+.seccionunoi__textoi {
+    grid-area: seccunoindxtxt;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.textoi__subi {
+    font-size: 3em;
+    padding: 2%;
+}
+.textoi__pi {
+    font-size: 2em;
+    padding: 2%;
+}
+.seccionunoi__imageni {
+    grid-area: seccunoindximg;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+}
+.imageni__imgi {
+    width: 100%;
+    border-radius: 1%;
+}
+            /*--- seccion dos de main ---*/ 
+.maini__secciondosi {
+    background-color: #F4F4F4;
+    grid-area: seccdosindx;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "seccdosindxsub"
+    "seccdosindxserv"
+    ;
+}
+.secciondosi__subi {
+    grid-area: seccdosindxsub;
+    font-size: 3em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.secciondosi__serviciosi {
+    grid-area: seccdosindxserv;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 90%;
+    grid-template-areas:
+    "coff yumm bits"
+    ;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.serviciosi__enlacei--coff {
+    grid-area: coff;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/fondocoff.webp);
+    background-size: cover;
+    background-position: center;
+}
+.enlacei__urli {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+.serviciosi__enlacei--yumm {
+    grid-area: yumm;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/fondoyumm.webp);
+    background-size: cover;
+    background-position: center;
+}
+.serviciosi__enlacei--bits {
+    grid-area: bits;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/fondobits.webp);
+    background-size: cover;
+    background-position: center;
+}
+.urli__imageni {
+    width: 50%;
+    display: none;
+}
+/* No es una regla valida de css puro hay que usar sass  */
+.enlacei__urli:hover {
+    backdrop-filter: blur(30px);
+    backdrop-filter: invert(40%);
+    .urli__imageni {
+        display: inline-block;
+    }
+}
+/* --------------------- footer -------------------- */
+.body__footer {
+    grid-area: footer;
+    background-color: #E9AE27;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "footp"
+    "footdrs"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+.footer___sub {
+    grid-area: footp;
+    font-size: 1em;
+}
+.footer__derechosautor {
+    grid-area: footdrs;
+    width: 100%;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "drcsub"
+    "drcparr"
+    ;
+    justify-items: center;
+}
+.derechosautor__sub {
+    grid-area: drcsub;
+    font-size: 1em;
+    margin-bottom: 1%;
+}
+.derechosautor__parrafos {
+    grid-area: drcparr;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "drcpuno drcpuno drcptres"
+    ;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.parrafos__p--3{
+    grid-area: drcpuno;
+}
+.parrafos__p--3{
+    grid-area: drcpdos;
+}
+.parrafos__p--3{
+    grid-area: drcptres;
+}
+/* .body, .body--1 {
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 209vh;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 99vh 100vh 10vh;
+    grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer"
+    ;
+    margin-top: .5%;
+    grid-row: .5%;
+}
+
+
+.encabezado__logo {
+    background-color: #F4F4F4;
+    grid-area: logo;
+    text-align: center;
+    padding: 10vh;
+}
+
+.logo__imagen {
+    width: 30vh;
+}
+
+.encabezado__nav {
+    background-color: #F4F4F4;
+    grid-area: nav;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+ .enlace__ico {
+    width: 100%;
+    padding: 10%;
+ }
+
+.encabezado__titulo {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    background-color: #F4F4F4;
+    grid-area: h1;
+    text-align: center;
+    justify-content: center;
+    padding: 2%; 
+}
+
+
+
+.body__main {
+    background-color: black;
+    color: #F4F4F4;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25vh 30vh 45vh;
+    grid-template-areas:
+    "mainh2 mainh2"
+    "mainp mainp"
+    "mainimg mainimg"
+    ;
+    align-items: center;
+
+}
+
+.main__h2 {
+    grid-area: mainh2;
+    font-size: 3em;
+    text-align: center;
+    padding: 5%;
+}
+
+.main__p {
+    grid-area: mainp;
+    font-size: 2em;
+    text-align: center;
+    padding: 5%;
+}
+
+
+.main__imagen {
+    display: flex;
+    align-items: center;
+    grid-area: mainimg;
+    width: 50vh;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen__img {
+    width: 100%;
+
+}
+.body__main--1{
+    background-color: black;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas:
+    "main1h2 main1h2"
+    "main1p main1p"
+    ;
+    align-items: center;
+    color: #F4F4F4;
+
+}
+.main__h2--1 {
+    grid-area: main1h2;
+    font-size: 2em;
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.main__p--1 {
+    grid-area: main1p;
+    font-size: 2em;
+    text-align: center;
+    padding: 5%;
+    padding-top: 0;
+    
+}
+.body__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
+    grid-area: footer;
+}
+
+.footer__p {
+    font-size: 1.5em;
+}
+
+
+.body--2 {
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 209vh;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 99vh 200vh 10vh;
+    grid-template-areas:
+    "header2 header2 header2"
+    ". main2 ."
+    "footer2 footer2 footer2"
+    ;
+    margin-top: .5%;
+    grid-row: .5%;
+}
+
+.body__encabezado--2 {
+    background-color: #F4F4F4;
+    grid-area: header2;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 49vh 50vh;
+    grid-template-areas:
+    "nav2 logo2 logo2 ."
+    "nav2 tit2 parr2 ."
+    ;
+}
+
+.encabezado__logo--2 {
+    background-color: #F4F4F4;
+    grid-area: logo2;
+    text-align: center;
+    padding: 10vh;
+}
+
+.encabezado__nav--2 {
+    background-color: #F4F4F4;
+    grid-area: nav2;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+.encabezado__titulo--2 {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    background-color: #F4F4F4;
+    grid-area: tit2;
+    text-align: center;
+    justify-content: center;
+    padding: 2%; 
+}
+
+.encabezado__parrafo--2 {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    background-color: #F4F4F4;
+    
+    grid-area: parr2;
+    text-align: center;
+    justify-content: center;
+    padding: 2%; 
+}
+
+
+.logo__imagen--2 {
+    width: 30vh;
+}
+
+
+.enlace__ico--2 {
+    width: 100%;
+    padding: 10%;
+}
+
+.body__main--2 {
+    background-color: black;
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200vh;
+    grid-template-areas:
+    "mainform"
+    ;
+    align-items: center;
+    color: #F4F4F4;
+
+}
+
+.main__form {
+    grid-area: mainform;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 170vh 30vh;
+    grid-template-areas: 
+    "field1 field2"
+    " field3 field3"
+    ;
+}
+
+.form__field--1{
+    grid-area: field1;
+}
+
+
+.form__field--2{
+    grid-area: field2;
+}
+
+.form__field--3 {
+    background-color: black;
+    grid-area: field3;
+    text-align: center;
+    padding: 1%;
+    
+}
+
+.form__field--1, .form__field--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    background-color: black;
+    color: #F4F4F4;
+
+}
+
+.field__evento, .field__comentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field__nombre, .field__edad, .field__email, .field__tel, .field__estado, .field__ciudad, .field__servicio, .field__evento, .field__fecha, .field__asistentes, .field__comentarios {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.field__fecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.field__legend {
+    font-size: 1.5em;
+}
+
+.body__footer--2 {
+    background-color: #F4F4F4;
+    grid-area: footer2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7em;
+}
+
+@media screen and (max-width: 1100px) {
+    .encabezado__titulo--2 {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .body__encabezado {
+        background-color: #F4F4F4;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 33vh 33vh 33vh;
+        grid-template-areas:
+        ". nav ."
+        ". logo ."
+        ". h1 ."
+        ;
+    }
+    
+    .encabezado__nav {
+        width: 100%;
+        height: 100%;
+        background-color: #F4F4F4;
+        grid-area: nav;
+        position: static;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50%;
+        grid-template-areas:
+        "navlist"
+        ;
+    }
+
+    .nav__lista {
+        background-color: #F4F4F4;
+        grid-area: navlist;
+        display: grid;
+        grid-template-columns: 18% 18% 18% 18% 18%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "listitem1 listitem2 listitem3 listitem4 listitem5"
+        ;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .lista__item--1 {
+        background-color: #F4F4F4;
+        grid-area: listitem1;
+        padding: 2%;
+        
+    }
+    .lista__item--2 {
+        background-color: #F4F4F4;
+        grid-area: listitem2;
+        padding: 2%;
+    }
+    .lista__item--3 {
+        background-color: #F4F4F4;
+        grid-area: listitem3;
+        padding: 2%;
+    }
+    .lista__item--4 {
+        background-color: #F4F4F4;
+        grid-area: listitem4;
+        padding: 2%;
+    }
+    .lista__item--5 {
+        background-color: #F4F4F4;
+        grid-area: listitem5;
+        padding: 2%;
+    }
+
+    .enlace__ico {
+        width: 50%;
+    }
+
+    .encabezado__logo {
+        grid-area: logo;
+        padding: 2%;
+    }
+
+    .encabezado__titulo {
+        grid-area: h1;
+        font-size: 2em;
+    }
+
+    .main__h2 {
+        font-size: 2em;
+        padding: 5%;
+    }
+    
+    .main__p {
+        font-size: 2em;
+        padding: 5%;
+    }
+
+    .body__encabezado--2 {
+        background-color: #F4F4F4;
+        grid-area: header2;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 33vh 33vh 20vh 13vh;
+        grid-template-areas:
+        ". nav2 ."
+        ". logo2 ."
+        ". tit2 ."
+        ". parr2 ."
+        ;
+    }
+    
+    .encabezado__logo--2 {
+        grid-area: logo2;
+        padding: 2vh;
+    }
+    
+    .encabezado__nav--2 {
+        width: 100%;
+        height: 100%;
+        background-color: #F4F4F4;
+        grid-area: nav2;
+        position: static;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50%;
+        grid-template-areas: 
+        "navlist2"
+        ;
+    
+    }
+    .nav__lista--2 {
+        background-color: #F4F4F4;
+        grid-area: navlist2;
+        display: grid;
+        grid-template-columns: 18% 18% 18% 18% 18%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "listitem1dos listitem2dos listitem3dos listitem4dos listitem5dos"
+        ;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lista__item1--2 {
+        background-color: #F4F4F4;
+        grid-area: listitem1dos;
+        padding: 2%;
+    }
+    .lista__item2--2 {
+        background-color: #F4F4F4;
+        grid-area: listitem2dos;
+        padding: 2%;
+    }
+    .lista__item3--2 {
+        background-color: #F4F4F4;
+        grid-area: listitem3dos;
+        padding: 2%;
+    }
+    .lista__item4--2 {
+        background-color: #F4F4F4;
+        grid-area: listitem4dos;
+        padding: 2%;
+    }
+    .lista__item5--2 {
+        background-color: #F4F4F4;
+        grid-area: listitem5dos;
+        padding: 2%;
+    }
+
+    .enlace__ico--2 {
+        width: 50%;
+    }
+    
+    .encabezado__titulo--2 {
+        grid-area: tit2;
+        font-size: 1.5em;
+        
+    
+    .encabezado__parrafo--2 {
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        background-color: #F4F4F4;
+        grid-area: parr2;
+        text-align: center;
+        justify-content: center;
+        padding: 2%; 
+    }
+    .logo__imagen--2 {
+        width: 30vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .encabezado__titulo {
+        grid-area: h1;
+        font-size: 1.5em;
+    }
+
+    .main__h2 {
+        grid-area: mainh2;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 5%;
+    }
+    
+    .main__p {
+        grid-area: mainp;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .main__imagen {
+        width: 30vh;
+    }
+
+    .footer__p {
+        font-size: 1em;
+    }
+
+    .main__h2--1 {
+        font-size: 1.5em;
+    }
+    
+    .main__p--1 {
+        font-size: 1.5em;
+    }
+
+    .main__form {
+        grid-area: mainform;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70vh 110vh 20vh;
+        grid-template-areas: 
+        "field1 field1"
+        "field2 field2"
+        "field3 field3"
+        ;
+    }
+    .form__field--1, .form__field--2 {
+        
+        padding: 1%;
+        margin: 1%;
+       
+    
+    }
+    
+    .field__nombre, .field__edad, .field__email, .field__tel, .field__estado, .field__ciudad, .field__servicio, .field__evento, .field__fecha, .field__asistentes, .field__comentarios {
+        margin: 1%;
+        
+    }
+    
+    .field__legend {
+        padding: 5%;
+        font-size: 1em;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .body, .body--1 {
+        width: 100%;
+        height: 160vh;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 50vh 100vh 10vh;
+        grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer"
+        ;
+    }
+    
+    .body__encabezado {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 10vh 20vh 20vh;
+    }
+
+    .encabezado__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh;
+    }
+    
+    .logo__imagen {
+        width: 15vh;
+    }
+    .encabezado__nav {
+        margin-top: 1.5vh;
+    }
+    
+    
+    .encabezado__titulo {
+        grid-area: h1;
+        font-size: 1em;
+    }
+
+    .main__h2 {
+        grid-area: mainh2;
+        font-size: 1em;
+        text-align: center;
+        padding: 5%;
+    }
+    
+    .main__p {
+        grid-area: mainp;
+        font-size: 1em;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .footer__p {
+        font-size: .8em;
+    }
+
+    .main__h2--1 {
+        font-size: 1em;
+    }
+    
+    .main__p--1 {
+        font-size: 1em;
+    }
+
+    .encabezado__titulo--2 {
+        font-size: 1em;
+    }
+
+    .encabezado__parrafo--2 {
+        font-size: 1em;
+    }
+
+    .field__legend {
+        font-size: .9em;
+    }
+    .field__nombre, .field__edad, .field__email, .field__tel, .field__estado, .field__ciudad, .field__servicio, .field__evento, .field__fecha, .field__asistentes, .field__comentarios, .field__cancelar, .field__borrar, .field__enviar {
+        font-size: .8em;
+        
+    }
+
+} 
+}
+
+@media screen and (max-width: 450px) {
+    .nav__lista {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .lista__item--1, .lista__item--2, .lista__item--3, .lista__item--4, .lista__item--5 {
+        padding: 0;
+    }
+
+   
+    .body--1 {
+       
+        background-color: #F4F4F4;
+        width: 100%;
+        height: 140vh;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 70vh 60vh 10vh;
+        grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer"
+        ;
+        margin-top: .5%;
+        grid-row: .5%;
+    }
+    
+    .body__main--1{
+        background-color: black;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh 25vh;
+        grid-template-areas:
+        "main1h2 main1h2"
+        "main1p main1p"
+        ;
+        align-items: center;
+    
+    }
+    .main__h2--1 {
+        grid-area: main1h2;
+        font-size: 1em;
+        text-align: center;
+        padding: 5%;
+        padding-bottom: 0;
+    }
+    
+    .main__p--1 {
+        grid-area: main1p;
+        font-size: 1em;
+        text-align: center;
+        padding: 5%;
+        padding-top: 0;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .body {
+        width: 100%;
+        height: 110vh;
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 50vh 50vh 10vh;
+        grid-template-areas:
+        "header header header"
+        ". main ."
+        "footer footer footer"
+        ;
+    }
+
+    .encabezado__titulo {
+        font-size: .7em;
+    }
+
+    .body__main {
+        grid-template-rows: 15vh 15vh 20vh;
+    }
+    
+    .main__h2 {
+        font-size: .7em;
+    }
+    
+    .main__p {
+        font-size: .6em;
+    }
+
+    .main__imagen {
+        width: 30vh;
+    }
+   
+    .footer__p {
+        text-align: center;
+        font-size: .5em;
+    } 
+
+    .main__h2--1 {
+        font-size: .7em;
+    }
+    
+    .main__p--1 {
+        font-size: .6em;
+    }
+} */

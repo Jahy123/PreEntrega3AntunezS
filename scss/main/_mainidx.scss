@@ -1,0 +1,91 @@
+.main1__seccionunoi {
+    @include estr-main-seccuno-i;
+    .seccionunoi__textoi {
+        grid-area: seccunoindxtxt;
+        padding: 10%;
+        flex-direction: column;
+        @include center-flex;
+        .textoi__subi {
+            font-size: $subtitulo-font-size;
+            padding: 2%;
+        }
+        .textoi__pi {
+            font-size: $parrafo-font-size;
+            padding: 2%;
+        }
+    }
+    .seccionunoi__imageni {
+        grid-area: seccunoindximg;
+        padding: 10%;
+        @include center-flex;
+        .imagen1__img1 {
+            width: 100%;
+            border-radius: 1%;
+        }
+    }
+}
+.main1__secciondosi {
+    @include estr-main-seccdos-i;
+    .secciondosi__subi {
+        grid-area: seccdosindxsub;
+        font-size: $subtitulo-font-size;
+        @include center-flex;
+    }
+    .secciondosi__serviciosi {
+        @include estr-seccdos-servi-i;
+        .serviciosi__enlacei--coff {
+            @include servi-enlaces-i;
+            grid-area: coff;
+            background-image: url(../assets/images/fondocoff.webp);
+            .enlacei__urli {
+                @include w-h-100;
+                @include center-flex;
+                font-size: $parrafo-font-size;
+                .urli__imageni {
+                    width: 50%;
+                    display: none;
+                    .imageni__imgi {
+                    }
+                }
+            }
+        }
+        .serviciosi__enlacei--yumm {
+            @include servi-enlaces-i;
+            grid-area: yumm;
+            background-image: url(../assets/images/fondoyumm.webp);
+            .enlacei__urli {
+                @include w-h-100;
+                @include center-flex;
+                font-size: $parrafo-font-size;
+                .urli__imageni {
+                    width: 50%;
+                    display: none;
+                    .imageni__imgi {
+                    }
+                }
+            }
+        }
+        .serviciosi__enlacei--bits {
+            @include servi-enlaces-i;
+            grid-area: bits;
+            background-image: url(../assets/images/fondobits.webp);
+            .enlacei__urli {
+                @include w-h-100;
+                @include center-flex;
+                font-size: $parrafo-font-size;
+                &:hover {
+                        backdrop-filter: blur(30px);
+                        backdrop-filter: invert(40%);
+                    }
+                .urli__imageni {
+                    width: 50%;
+                    display: none;
+                    
+                    .imageni__imgi {
+
+                    }
+                }
+            }
+        }
+    }
+}
