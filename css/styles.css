@@ -5,9 +5,250 @@
     font-family: 'Barlow', sans-serif;
     list-style-type: none;
     border: none;
+    text-decoration: none;
+}
+.body {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 319vh;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 99vh 200vh 20vh ;
+    grid-template-areas:
+    "headerindx headerindx headerindx"
+    ". mainindx ."
+    "footer footer footer"
+    ;
+}
+/*---------------------- header --------------------*/
+.body__encabezado {
+    grid-area: headerindx;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 49vh 50vh;
+    grid-template-areas:
+    "nav logo ."
+    "nav titulo ."
+    ;
+}
+.encabezado__logo {
+    grid-area: logo;
+    text-align: center;
+    padding: 5%;
+}
+.logo__imagen {
+    width: 30vh;
+}
+.encabezado__nav {
+    grid-area: nav;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+.item__ico, .enlace__ico {
+    width: 100%;
+    padding: 10%;
+ }
+.encabezado__titulo {
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    padding: 2%; 
 }
 
-.body, .body--1 {
+/*----------------------- main --------------------- */
+.body__main {
+    grid-area: mainindx;
+    background-color: black;
+    color: #F4F4F4;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh 100vh;
+    grid-template-areas:
+    "seccunoindx"
+    "seccdosindx"
+    ;
+}
+            /*--- seccion uno de main ---*/ 
+.main__seccionunoi {
+    grid-area: seccunoindx;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "seccunoindxtxt seccunoindximg"
+    ;
+}
+.seccionunoi__texto {
+    grid-area: seccunoindxtxt;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.texto__sub {
+    font-size: 3em;
+    padding: 2%;
+}
+.texto__p {
+    font-size: 2em;
+    padding: 2%;
+}
+.seccionunoi__imagen {
+    grid-area: seccunoindximg;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+}
+.imagen__img {
+    width: 100%;
+    border-radius: 1%;
+}
+            /*--- seccion dos de main ---*/ 
+.main__secciondosi {
+    background-color: #F4F4F4;
+    grid-area: seccdosindx;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "seccdosindxsub"
+    "seccdosindxserv"
+    ;
+}
+.secciondosi__sub {
+    grid-area: seccdosindxsub;
+    font-size: 3em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.secciondosi__servicios {
+    grid-area: seccdosindxserv;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 90%;
+    grid-template-areas:
+    "coff yumm bits"
+    ;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.servicios__enlace--coff {
+    grid-area: coff;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/fondocoff.webp);
+    background-size: cover;
+    background-position: center;
+}
+.enlace__url {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+.servicios__enlace--yumm {
+    grid-area: yumm;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/fondoyumm.webp);
+    background-size: cover;
+    background-position: center;
+}
+.servicios__enlace--bits {
+    grid-area: bits;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/fondobits.webp);
+    background-size: cover;
+    background-position: center;
+}
+.url__imagen {
+    width: 50%;
+    display: none;
+}
+/* No es una regla valida de css puro hay que usar sass  */
+.enlace__url:hover {
+    backdrop-filter: blur(30px);
+    backdrop-filter: invert(40%);
+    .url__imagen {
+        display: inline-block;
+    }
+}
+/* --------------------- footer -------------------- */
+.body__footer {
+    grid-area: footer;
+    background-color: #E9AE27;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "footp"
+    "footdrs"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+.footer___sub {
+    grid-area: footp;
+    font-size: 1em;
+}
+.footer__derechosautor {
+    grid-area: footdrs;
+    width: 100%;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "drcsub"
+    "drcparr"
+    ;
+    justify-items: center;
+}
+.derechosautor__sub {
+    grid-area: drcsub;
+    font-size: 1em;
+    margin-bottom: 1%;
+}
+.derechosautor__parrafos {
+    grid-area: drcparr;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "drcpuno drcpuno drcptres"
+    ;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.parrafos__p--3{
+    grid-area: drcpuno;
+}
+.parrafos__p--3{
+    grid-area: drcpdos;
+}
+.parrafos__p--3{
+    grid-area: drcptres;
+}
+/* .body, .body--1 {
     background-color: #F4F4F4;
     width: 100%;
     height: 209vh;
@@ -23,18 +264,6 @@
     grid-row: .5%;
 }
 
-.body__encabezado {
-    background-color: #F4F4F4;
-    height: 99vh;
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 49vh 50vh;
-    grid-template-areas:
-    "nav logo ."
-    "nav h1 ."
-    ;
-}
 
 .encabezado__logo {
     background-color: #F4F4F4;
@@ -779,4 +1008,4 @@
     .main__p--1 {
         font-size: .6em;
     }
-}
+} */
