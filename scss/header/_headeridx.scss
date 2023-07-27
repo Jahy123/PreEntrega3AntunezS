@@ -2,43 +2,77 @@
     grid-area: logo;
     text-align: center;
     padding: 5%;
+    @include breakpoint200 {
+        padding: 2%;
+    }
     .logo__imagen {
         width: 30vh;
+        @include breakpoint200 {
+            width: 10vh;
+        }
     }
 }
 .encabezado__nav {
     @include estr-header-nav-i;
+    @include breakpoint200 {
+        top: 0;
+        width: 100%;
+        height: 5vh;
+    }
     .nav__lista {
+        @include breakpoint200 {
+            @include center-flex;
+        
+        }
+       
         .lista__item {
+            @include breakpoint200 {
+                @include center-flex;
+            }
             .item__ico {
                 @include tamiconosnav;
+                @include breakpoint200 {
+                    width: 50%;            
+                }
             }
         }
         .lista__item {
             .item__enlace {
+                @include breakpoint200 {
+                    @include center-flex;
+                }
                 .enlace__ico {
                     @include tamiconosnav;
+                    @include breakpoint200 {
+                        width: 50%;            
+                    }
                 }
             }
         }
         .lista__item {
             .item__enlace {
                 .enlace__ico {
-                    
+                    @include breakpoint200 {
+                        width: 50%;            
+                    }
                 }
             }
         }
         .lista__item {
             .item__enlace {
                 .enlace__ico {
-                    
+                    @include breakpoint200 {
+                        width: 50%;            
+                    }
                 }
             }
         }
         .lista__item {
             .item__enlace {
                 .enlace__ico {
-                    
+                    @include breakpoint200 {
+                        width: 50%;            
+                    }
                 }
             }
         }
@@ -49,5 +83,8 @@
     grid-area: titulo;
     @include center-flex;
     font-size: $titulo-font-size;
-    padding: 2%; 
+    padding: 2%;
+    @include breakpoint200 {
+        font-size: $titulo-font-size/3.5;
+    }
 }

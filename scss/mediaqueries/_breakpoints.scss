@@ -1,0 +1,44 @@
+@mixin breakpoint1100 {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+
+}
+
+@mixin breakpoint850 {
+    @media screen and (max-width: 850px) {
+        @content;
+    }
+
+}
+
+@mixin breakpoint700 {
+    @media screen and (max-width: 700px) {
+        @content;
+    }
+
+}
+@mixin breakpoint500 {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint450 {
+    @media screen and (max-width: 450px) {
+        @content;
+    }
+
+}
+@mixin breakpoint400 {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+
+}
+@mixin breakpoint200 {
+    @media screen and (max-width: 200px) {
+        @content;
+    }
+
+}

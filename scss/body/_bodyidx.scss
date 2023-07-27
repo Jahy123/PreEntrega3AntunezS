@@ -1,13 +1,40 @@
 .body {
     @include estr-body-i;
+    @include breakpoint200 {
+            height: 100vh;
+            grid-template-columns: 100%;
+            grid-template-rows: 30vh 60vh 10vh;
+            grid-template-areas:
+            "headerindx"
+            "mainindx"
+            "footer";
+        }
     .body__encabezado {
         @include estr-body-header-i;
+        @include breakpoint200 {
+            grid-template-columns: 100%;
+            grid-template-rows: 5vh 10vh 15vh ;
+            grid-template-areas:
+            "nav"
+            "logo"
+            "titulo"
+            ;
+            @include center-grid;
+        }
     }
     .body__maini {
         @include estr-body-main-i;
+        @include breakpoint200 {
+            grid-template-columns: 100%;
+            grid-template-rows: 30vh 30vh;
+        }
     }
     .body__footer {
         @include center-grid;
         @include estr-body-footer-i;
+        @include breakpoint200 {
+            grid-template-columns: 100%;
+            grid-template-rows: 5vh 5vh;
+        }
     }
 }

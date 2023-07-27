@@ -17,12 +17,32 @@
   grid-template-rows: 99vh 200vh 20vh;
   grid-template-areas: "headerindx headerindx headerindx" ". mainindx ." "footer footer footer";
 }
+@media screen and (max-width: 200px) {
+  .body {
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 60vh 10vh;
+    grid-template-areas: "headerindx" "mainindx" "footer";
+  }
+}
 .body .body__encabezado {
   display: grid;
   grid-area: headerindx;
   grid-template-columns: 5% 90% 5%;
   grid-template-rows: 49vh 50vh;
   grid-template-areas: "nav logo ." "nav titulo .";
+}
+@media screen and (max-width: 200px) {
+  .body .body__encabezado {
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh 10vh 15vh;
+    grid-template-areas: "nav" "logo" "titulo";
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .body .body__maini {
   background-color: #000000;
@@ -32,6 +52,12 @@
   grid-template-columns: 100%;
   grid-template-rows: 100vh 100vh;
   grid-template-areas: "seccunoindx" "seccdosindx";
+}
+@media screen and (max-width: 200px) {
+  .body .body__maini {
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 30vh;
+  }
 }
 .body .body__footer {
   display: grid;
@@ -45,14 +71,30 @@
   grid-template-rows: 10vh 10vh;
   grid-template-areas: "footp" "footdrs";
 }
+@media screen and (max-width: 200px) {
+  .body .body__footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh 5vh;
+  }
+}
 
 .encabezado__logo {
   grid-area: logo;
   text-align: center;
   padding: 5%;
 }
+@media screen and (max-width: 200px) {
+  .encabezado__logo {
+    padding: 2%;
+  }
+}
 .encabezado__logo .logo__imagen {
   width: 30vh;
+}
+@media screen and (max-width: 200px) {
+  .encabezado__logo .logo__imagen {
+    width: 10vh;
+  }
 }
 
 .encabezado__nav {
@@ -62,14 +104,74 @@
   width: 5%;
   text-align: center;
 }
+@media screen and (max-width: 200px) {
+  .encabezado__nav {
+    top: 0;
+    width: 100%;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .encabezado__nav .nav__lista .lista__item .item__ico {
   width: 100%;
   padding: 10%;
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item .item__ico {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item .item__enlace {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .encabezado__nav .nav__lista .lista__item .item__enlace .enlace__ico {
   width: 100%;
   padding: 10%;
 }
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item .item__enlace .enlace__ico {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item .item__enlace .enlace__ico {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item .item__enlace .enlace__ico {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 200px) {
+  .encabezado__nav .nav__lista .lista__item .item__enlace .enlace__ico {
+    width: 50%;
+  }
+}
+
 .encabezado__titulo {
   grid-area: titulo;
   display: flex;
@@ -79,6 +181,11 @@
   text-align: center;
   font-size: 3em;
   padding: 2%;
+}
+@media screen and (max-width: 200px) {
+  .encabezado__titulo {
+    font-size: 0.8571428571em;
+  }
 }
 
 .maini__seccionunoi {
@@ -226,7 +333,7 @@
 
 .footer__sub {
   grid-area: footp;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .footer__derechosautori {
@@ -241,7 +348,7 @@
 }
 .footer__derechosautori .derechosautori__subi {
   grid-area: drcsub;
-  font-size: 1em;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   align-content: center;
@@ -249,7 +356,7 @@
   text-align: center;
 }
 .footer__derechosautori .derechosautori__parrafosi {
-  font-size: 1em;
+  font-size: 1.5em;
   grid-area: drcparr;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100%;
