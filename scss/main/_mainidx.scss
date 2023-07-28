@@ -1,8 +1,16 @@
 .maini__seccionunoi {
     @include estr-main-seccuno-i;
-    @include breakpoint200 {
+    @include breakpoint800 {
         grid-template-columns: 100%;
-        grid-template-rows: 15vh 15vh;
+        grid-template-rows: 50vh 50vh;
+        grid-template-areas: 
+        "seccunoindxtxt"
+        "seccunoindximg";
+        align-content: center;
+    }
+    @include breakpoint600 {
+        grid-template-columns: 100%;
+        grid-template-rows: 30vh 30vh;
         grid-template-areas: 
         "seccunoindxtxt"
         "seccunoindximg";
@@ -14,50 +22,91 @@
         @include center-flex;
         
         .textoi__subi {
-            font-size: $subtitulo-font-size;
             padding: 2%;
-            @include breakpoint200 {
-                font-size: $subtitulo-font-size/3;
+            @include breakpoint5000 {
+                font-size: $subtitulo-font-size*3;
+            }
+            @include breakpoint3700 {
+                font-size: $subtitulo-font-size*2.5;
+            }
+            @include breakpoint2500 {
+                font-size: $subtitulo-font-size*2;
+            }
+            @include breakpoint1900 {
+                font-size: $subtitulo-font-size;
+            }
+            @include breakpoint600 {
+                font-size: $subtitulo-font-size/1.5;
+            }
+            @include breakpoint450 {
+                font-size: $subtitulo-font-size/2;
             }
         }
         .textoi__pi {
-            font-size: $parrafo-font-size;
             padding: 2%;
-            @include breakpoint200 {
-                font-size: $parrafo-font-size/3;
+            @include breakpoint5000 {
+                font-size: $parrafo-font-size*3;
+            }
+            @include breakpoint3700 {
+                font-size: $parrafo-font-size*2.5;
+            }
+            @include breakpoint2500 {
+                font-size: $parrafo-font-size*2;
+            }
+            @include breakpoint1900 {
+                font-size: $parrafo-font-size;
+            }
+            @include breakpoint600 {
+                font-size: $parrafo-font-size/1.5;
             }
         }
     }
     .seccionunoi__imageni {
         grid-area: seccunoindximg;
         padding: 10%;
+        @include breakpoint800 {
+            padding: 1% 10%;
+        }
         @include center-flex;
         .imageni__imgi {
             width: 100%;
             border-radius: 1%;
-            @include breakpoint200 {
-                width: 80%;
+            @include breakpoint800 {
+                width: 50%;
             }
         }
     }
 }
 .maini__secciondosi {
     @include estr-main-seccdos-i;
-    
-    
     .secciondosi__subi {
         grid-area: seccdosindxsub;
-        font-size: $subtitulo-font-size;
         color: $colortxtmainseccsdosindx;
         @include center-flex;
-        @include breakpoint200 {
-            font-size: $subtitulo-font-size/3;
+        @include breakpoint5000 {
+            font-size: $subtitulo-font-size*3;
         }
+        @include breakpoint3700 {
+            font-size: $subtitulo-font-size*2.5;
+        }
+        @include breakpoint2500 {
+            font-size: $subtitulo-font-size*2;
+        }
+        @include breakpoint1900 {
+            font-size: $subtitulo-font-size;
+        }
+        @include breakpoint600 {
+            font-size: $subtitulo-font-size/1.5;
+        }
+        @include breakpoint450 {
+            font-size: $subtitulo-font-size/2;
+        }
+
     }
     .secciondosi__serviciosi {
         @include estr-seccdos-servi-i;
-        @include breakpoint200 {
-            grid-template-columns: 100%;
+        @include breakpoint600 {
+            grid-template-columns: 90%;
             grid-template-rows: 30% 30% 30%;
             grid-template-areas: 
             "coff" 
@@ -69,15 +118,22 @@
             @include servi-enlaces-i;
             grid-area: coff;
             background-image: url(../assets/images/fondocoff.webp);
+            @include breakpoint600 {
+                 background-position: 0% 80%;
+            }
             .enlacei__urli {
                 @include w-h-100;
                 @include center-flex;
                 font-size: $parrafo-font-size;
                 .urli__imageni {
                     width: 50%;
+                    
                     .imageni__imgi {
                         width: 100%;
                         border-radius: 1%;
+                        @include breakpoint600 {
+                            width: 45%;
+                        }
                     }
                 }
             }
@@ -95,6 +151,9 @@
                     .imageni__imgi {
                         width: 100%;
                         border-radius: 1%;
+                        @include breakpoint600 {
+                            width: 45%;
+                        }
                     }
                 }
             }
@@ -112,6 +171,9 @@
                     .imageni__imgi {
                         width: 100%;
                         border-radius: 1%;
+                        @include breakpoint600 {
+                            width: 45%;
+                        }
                     }
                 }
             }

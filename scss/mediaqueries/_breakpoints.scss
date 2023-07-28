@@ -1,3 +1,33 @@
+@mixin breakpoint5000 {
+    @media screen and (max-width: 5000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint3700 {
+    @media screen and (max-width: 3700px) {
+        @content;
+    }
+
+}
+@mixin breakpoint2500 {
+    @media screen and (max-width: 2500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1900 {
+    @media screen and (max-width: 1900px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1300 {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+
+}
 @mixin breakpoint1100 {
     @media screen and (max-width: 1100px) {
         @content;
@@ -5,21 +35,21 @@
 
 }
 
-@mixin breakpoint850 {
-    @media screen and (max-width: 850px) {
+@mixin breakpoint800 {
+    @media screen and (max-width: 800px) {
         @content;
     }
 
 }
 
-@mixin breakpoint700 {
-    @media screen and (max-width: 700px) {
+@mixin breakpoint600 {
+    @media screen and (max-width: 600px) {
         @content;
     }
 
 }
-@mixin breakpoint500 {
-    @media screen and (max-width: 500px) {
+@mixin breakpoint550 {
+    @media screen and (max-width: 550px) {
         @content;
     }
 
@@ -30,12 +60,7 @@
     }
 
 }
-@mixin breakpoint400 {
-    @media screen and (max-width: 400px) {
-        @content;
-    }
 
-}
 @mixin breakpoint200 {
     @media screen and (max-width: 200px) {
         @content;

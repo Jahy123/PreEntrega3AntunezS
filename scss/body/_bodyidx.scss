@@ -1,5 +1,12 @@
 .body {
     @include estr-body-i;
+    @include breakpoint800 {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "headerindx"
+        "mainindx"
+        "footer";
+        }
     @include breakpoint200 {
             height: 100vh;
             grid-template-columns: 100%;
@@ -11,6 +18,21 @@
         }
     .body__encabezado {
         @include estr-body-header-i;
+        
+        @include breakpoint800 {
+            grid-template-columns: 100%;
+            grid-template-rows: 33vh 33vh 33vh ;
+            grid-template-areas:
+            "nav"
+            "logo"
+            "titulo"
+            ;
+            @include center-grid;
+        }
+        @include breakpoint600 {
+            grid-template-rows: 20vh 33vh 20vh;
+            align-content: stretch;
+        }
         @include breakpoint200 {
             grid-template-columns: 100%;
             grid-template-rows: 5vh 10vh 15vh ;
