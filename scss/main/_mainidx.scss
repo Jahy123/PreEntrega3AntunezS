@@ -1,17 +1,31 @@
 .maini__seccionunoi {
     @include estr-main-seccuno-i;
+    @include breakpoint200 {
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 15vh;
+        grid-template-areas: 
+        "seccunoindxtxt"
+        "seccunoindximg";
+    }
     .seccionunoi__textoi {
         grid-area: seccunoindxtxt;
         padding: 10%;
         flex-direction: column;
         @include center-flex;
+        
         .textoi__subi {
             font-size: $subtitulo-font-size;
             padding: 2%;
+            @include breakpoint200 {
+                font-size: $subtitulo-font-size/3;
+            }
         }
         .textoi__pi {
             font-size: $parrafo-font-size;
             padding: 2%;
+            @include breakpoint200 {
+                font-size: $parrafo-font-size/3;
+            }
         }
     }
     .seccionunoi__imageni {
@@ -21,19 +35,36 @@
         .imageni__imgi {
             width: 100%;
             border-radius: 1%;
+            @include breakpoint200 {
+                width: 80%;
+            }
         }
     }
 }
 .maini__secciondosi {
     @include estr-main-seccdos-i;
+    
+    
     .secciondosi__subi {
         grid-area: seccdosindxsub;
         font-size: $subtitulo-font-size;
         color: $colortxtmainseccsdosindx;
         @include center-flex;
+        @include breakpoint200 {
+            font-size: $subtitulo-font-size/3;
+        }
     }
     .secciondosi__serviciosi {
         @include estr-seccdos-servi-i;
+        @include breakpoint200 {
+            grid-template-columns: 100%;
+            grid-template-rows: 30% 30% 30%;
+            grid-template-areas: 
+            "coff" 
+            "yumm" 
+            "bits"
+            ;
+        }
         .serviciosi__enlacei--coff {
             @include servi-enlaces-i;
             grid-area: coff;
