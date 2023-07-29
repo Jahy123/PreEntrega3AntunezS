@@ -55,12 +55,21 @@
         @include center-grid;
         .parrafosi__pi--1 {
             grid-area: drcpuno;
+            a {
+                color: #f4f4f4;
+            }
         }
         .parrafosi__pi--2 {
             grid-area: drcpdos;
+            a {
+                color: #f4f4f4;
+            }
         }
         .parrafosi__pi--3 {
             grid-area: drcptres;
+            a {
+                color: #f4f4f4;
+            }
         }
     }
     

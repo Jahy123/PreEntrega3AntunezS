@@ -118,15 +118,24 @@
             @include servi-enlaces-i;
             grid-area: coff;
             background-image: url(../assets/images/fondocoff.webp);
+            backdrop-filter: blur(10px);
+            backdrop-filter: invert(20%);
             @include breakpoint600 {
                  background-position: 0% 80%;
             }
             .enlacei__urli {
                 @include w-h-100;
                 @include center-flex;
+                flex-direction: column;
+                ;
+                color: $colortxtmainseccsdosindx;
                 font-size: $parrafo-font-size;
+                .urli__pi{
+                    background-color: #f4f4f4;
+                    color: black;
+                    width: 100%;
+                }  
                 .urli__imageni {
-                    width: 50%;
                     
                     .imageni__imgi {
                         width: 100%;
@@ -145,9 +154,15 @@
             .enlacei__urli {
                 @include w-h-100;
                 @include center-flex;
+                flex-direction: column;
                 font-size: $parrafo-font-size;
+                .urli__pi{
+                    background-color: #f4f4f4;
+                    color: black;
+                    width: 100%;
+                }  
                 .urli__imageni {
-                    width: 50%;
+            
                     .imageni__imgi {
                         width: 100%;
                         border-radius: 1%;
@@ -165,9 +180,15 @@
             .enlacei__urli {
                 @include w-h-100;
                 @include center-flex;
+                flex-direction: column;
                 font-size: $parrafo-font-size;
+                .urli__pi{
+                    background-color: #f4f4f4;
+                    color: black;
+                    width: 100%;
+                }  
                 .urli__imageni {
-                    width: 50%;
+                    
                     .imageni__imgi {
                         width: 100%;
                         border-radius: 1%;

@@ -1,0 +1,51 @@
+// Animacion de fondo de la seccion servicios en index tras cumplirse :hover.
+
+$urli__imageni: 50%;
+$enlacei__urli: blur(30px);
+
+.urli__imageni {
+    width: $urli__imageni;
+    display: none;
+}
+
+.enlacei__urli:hover {
+    backdrop-filter: $enlacei__urli;
+    backdrop-filter: invert(40%);
+}
+.enlacei__urli:hover .urli__imageni {
+    display: inline-block;
+}
+.enlacei__urli:hover .urli__pi {
+    display: none;
+}
+Animacion hover en los iconos de nav en index
+
+.item__ico {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfonodiconrindx;
+        max-width: 90%;
+    }
+}
+.enlace__ico {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfonodiconrindx;
+        max-width: 90%;
+    }
+}
+// Animacion logo de index 
+@keyframes logo {
+    0%{ width: 25vh;}
+    25%{ width: 30vh;}
+    50%{ width: 25vh;}
+    75%{ width: 30vh;}
+    100%{ width: 25vh;}
+}
+.logo__imagen {
+    animation: logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}

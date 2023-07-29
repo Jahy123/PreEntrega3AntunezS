@@ -52,6 +52,7 @@
 }
 @mixin estr-body-footer-i {
     background-color: $colorfooterindx;
+    color: $colortxtfooterindx;
     grid: {
         area: footer;
         template-columns:  100%;
