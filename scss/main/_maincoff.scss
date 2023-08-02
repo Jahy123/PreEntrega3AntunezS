@@ -1,0 +1,180 @@
+.principalc__seccionc--uno {
+    padding: 5%;
+    @include estr-main-seccuno-coff;
+    @include breakpoint800 {
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh 2ch;
+        grid-template-areas: 
+        "seccunocoffsub"
+        "seccunocoffparr";
+        align-content: center;
+    }
+    // @include breakpoint600 {
+    //     grid-template-columns: 100%;
+    //     grid-template-rows: 30vh 30vh;
+    //     grid-template-areas: 
+    //     "seccunocoffsub"
+    //     "seccunoicoffparr";
+    // }
+    .seccionc__subc {
+        grid-area: seccunocoffsub;
+        padding: 5%;
+        @include center-flex;
+        @include font-subtitulos;
+    }
+    .seccionc__pc {
+        grid-area: seccunocoffparr;
+        padding: 5%;
+        @include center-flex;
+        @include font-parrafos;
+    }
+}
+.principalc__seccionc--dos {
+    @include estr-main-seccdos-coff;
+    .seccionc__textoc {
+        grid-area: preguntassubcoff;
+        background-color: #ffc107;
+        
+        @include center-flex;
+        .textoc__subtituloc {
+            @include font-subtitulos;
+        }
+    }
+    .seccionc__informacionc--uno{
+        grid-area: ubicacionescoff;
+        background-image: url(../assets/images/ubicaciones.webp);
+        background-size: cover;
+        background-position: 0 18%;
+        @include center-flex;
+        .informacionc__subtituloc {
+            @include font-subtitulos;
+            background-color: $colortxtpreguntascoff;
+
+        }
+        .informacionc__textoc {
+            color: $colortxtinfocoff;
+        }
+        .textoc__subtituloc {
+            @include font-subtitulos-ch;
+        }
+        .textoc__parrafoc {
+            @include font-parrafos;
+            
+        }
+        .textoc__subtituloc {
+            @include font-subtitulos-ch;
+        }
+        .textoc__parrafoc {
+            @include font-parrafos;
+            
+        }
+    }
+    .seccionc__informacionc--dos {
+        grid-area: capersocoff;
+        
+        @include center-flex;
+        background-image: url(../assets/images/personal.webp);
+        background-size: cover;
+       .informacionc__subtituloc {
+        @include font-subtitulos;
+        background-color: $colortxtpreguntascoff;
+    }
+       .informacionc__textoc {
+        color: $colortxtinfocoff;
+        .textoc__partec {
+            
+            .partec__subc {
+                @include font-subtitulos-ch;
+            }
+            .partec__parrc {
+                @include font-parrafos;
+            }
+        }
+        .textoc__partec {
+            .partec__subc {
+                @include font-subtitulos-ch;
+            }
+            .partec__parrc {
+                @include font-parrafos;
+            }
+        }
+        .textoc__partec {
+            .partec__subc {
+                @include font-subtitulos-ch;
+            }
+            .partec__parrc {
+                @include font-parrafos;
+            }
+        }
+        .textoc__partec {
+            .partec__subc {
+                @include font-subtitulos-ch;
+            }
+            .partec__parrc {
+                @include font-parrafos;
+            }
+        }
+       }
+    }
+    .seccionc__informacionc--tres {
+        grid-area: reqlegcoff;
+        @include center-flex;
+        background-image: url(../assets/images/legal.webp);
+        background-size: cover;
+        background-position: 0px 39%;
+        .informacionc__subc {
+            @include font-subtitulos;
+            background-color: $colortxtpreguntascoff;
+        }
+        .informacionc__textoc {
+            color: $colortxtinfocoff;
+            .textoc__listac {
+                @include font-parrafos;
+            }
+        }
+    }
+    .seccionc__informacionc--cuatro {
+        grid-area: menuscoff;
+        @include center-flex;
+        background-image: url(../assets/images/menus.webp);
+        background-size: cover;
+        .informacionc__subc {
+            @include font-subtitulos;
+            background-color: $colortxtpreguntascoff;
+        }
+        .informacionc__textoc {
+            color: $colortxtinfocoff;
+            .textoc__subc {
+                @include font-subtitulos-ch;
+            }
+            .textoc__listac {
+                @include font-parrafos;
+            }
+            .textoc__subc {
+                @include font-subtitulos-ch;
+            }
+            .textoc__parrafoc {
+                @include font-parrafos;
+            }
+        }
+    }
+    .seccionc__informacionc--cinco {
+        background-image: url(../assets/images/presupuesto.webp);
+        background-size: cover;
+        background-position: 65% 51%;
+        @include center-flex;
+        grid-area: prescoff;
+        .informacionc__subc {
+            @include font-subtitulos;
+            background-color: $colortxtpreguntascoff;
+        }
+        .informacionc__textoc {
+                color: $colortxtinfocoff;
+                .textoc__parrafoc {
+                    @include font-parrafos;
+                }
+            }
+        
+    }
+    
+}

@@ -1,21 +1,20 @@
-.footer__p{
+.footerc__pc {
     @include font-parrafos-ch;
-    
 }
-.footer__derechosautori {
+.footerc__derechosautorc {
     @include font-parrafos-ch;
     @include center-flex;
     flex-direction: column;
-    .derechosautori__subi {
+    .derechosautorc__subc {
     }
-    .derechosautori__parrafosi {
+    .derechosautorc__parrafosc {
         @include center-flex;
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 1%;
-        p a{
-            color: $colorenlacefooterindx;
-        }
+    }
+    p a{
+        color: $colorenlacefootercoff;
     }
 }

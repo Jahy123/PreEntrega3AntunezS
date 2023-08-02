@@ -25,6 +25,22 @@
         ;
     }
 }
+@mixin estr-body-coff {
+    background-color: $colorfondocoff;
+    width: 100%;
+    height: 639vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 420vh 100vh 20vh ;
+        template-areas:
+        "headercoff headercoff headercoff"
+        ". maincoff ."
+        ". contactocoff ."
+        "footercoff footercoff footercoff"
+        ;
+    }
+}
 @mixin estr-body-header-i {
     display: grid;
     grid: {
@@ -34,6 +50,18 @@
         template-areas:
         "nav logo ."
         "nav titulo ."
+        ;
+    }
+}
+@mixin estr-body-header-coff {
+    display: grid;
+    grid: {
+        area: headercoff;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navcoff logocoff ."
+        "navcoff titulocoff ."
         ;
     }
 }
@@ -50,21 +78,51 @@
         "seccdosindx";
     }
 }
-@mixin estr-body-footer-i {
-    background-color: $colorfooterindx;
-    color: $colortxtfooterindx;
+@mixin estr-body-main-coff {
+    background-color: $colormaincoff;
+    color: $colortxtmaincoff;
+    display: grid;
     grid: {
-        area: footer;
+        area: maincoff;
         template-columns:  100%;
-        template-rows: 10vh 10vh;
+        template-rows: 100vh 320vh;
         template-areas:
-        "footp"
-        "footdrs"
+        "seccunocoff"
+        "seccdoscoff";
+    }
+}
+@mixin estr-body-contacto-coff {
+    background-color: $colorcontactocoff;
+    color: $colortxtcontactocoff;
+    display: grid;
+    grid: {
+        area: contactocoff;
+        template-columns: 60% 40%;
+        template-rows: 100vh;
+        template-areas:
+        "txtcontacoff enlacescontacoff"
         ;
     }
 }
+@mixin estr-body-footer-i {
+    grid-area: footer;
+    background-color: $colorfooterindx;
+    color: $colortxtfooterindx;
+}
+@mixin estr-body-footer-coff {
+    grid-area: footercoff;
+    background-color: $colorfootercoff;
+    color: $colortxtfootercoff;
+}
 @mixin estr-header-nav-i {
     grid-area: nav;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-coff {
+    grid-area: navcoff;
     position: fixed;
     top: 25vh;
     width: 5%;
@@ -81,6 +139,17 @@
         ;
     }
 }
+@mixin estr-main-seccuno-coff {
+    display: grid;
+    grid: {
+        area: seccunocoff;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunocoffsub seccunocoffparr"
+        ;
+    }
+}
 @mixin estr-main-seccdos-i {
     background-color: $colormainseccdosindx;
     display: grid;
@@ -91,6 +160,24 @@
         template-areas:
         "seccdosindxsub"
         "seccdosindxserv"
+        ;
+    }
+}
+@mixin estr-main-seccdos-coff {
+    background-color: $colorfondocoff;
+    color: $colortxtmainseccdoscoff;
+    display: grid;
+    grid: {
+        area: seccdoscoff;
+        template-columns:  100%;
+        template-rows: 20vh 50vh 100vh 50vh 50vh 50vh;
+        template-areas:
+        "preguntassubcoff"
+        "ubicacionescoff"
+        "capersocoff"
+        "reqlegcoff"
+        "menuscoff"
+        "prescoff"
         ;
     }
 }
@@ -107,33 +194,6 @@
     justify-content: center;
     align-items: center;
     gap: 1%;
-}
-
-@mixin estr-foot-dra-i {
-    display: grid;
-    width: 100%;
-    justify-items: center;
-    font-size: $parrafo-font-size/2;
-    grid: {
-        area: footdrs;
-        template-columns: 100%;
-        template-rows: 3vh 7vh;
-        template-areas:
-        "drcsub"
-        "drcparr"
-        ;
-    }
-}
-@mixin estr-foot-dra-parr-i {
-    font-size: $parrafo-font-size/1;
-    grid: {
-        area: drcparr;
-        template-columns: 33% 33% 33%;
-        template-rows: 100%;
-        template-areas:
-        "drcpuno drcpdos drcptres"
-        ;
-    }
 }
 // posicionamiento
     // flex
@@ -185,3 +245,17 @@
     width: 100%;
     height: 100%;
 }
+
+// Fodos de imagenes {
+    @mixin fondo_header {
+        background: {
+            image: url(../assets/images/fondocoff.webp);
+            size: cover;
+            position: 0 79%;
+        }
+    }
+    @mixin fondo_elementos_header{
+        backdrop-filter: blur(50px);
+        background-color: #030b1291;
+        border-radius: 9%;
+    }

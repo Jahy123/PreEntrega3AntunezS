@@ -1,0 +1,74 @@
+.seccioncontactoc__textoc {
+    grid-area: txtcontacoff;
+    @include center-flex;
+    flex-direction: column;
+    padding: 5%;
+    .textoc__subc {
+        @include font-subtitulos;
+        padding: 5%;
+    }
+    .textoc__parrafoc {
+        @include font-parrafos;
+        padding: 5%;
+    }
+}
+.seccioncontactoc__contactoc {
+    @include font-parrafos-ch;
+    padding: 10%;
+    grid-area: enlacescontacoff;
+    @include breakpoint800 {
+        padding: 5%;
+    }
+    .contactoc__emailc {
+        @include center-flex;
+        @include breakpoint800 {
+            flex-direction: column;
+        }
+        
+        justify-content: flex-start;
+        .emailc__imagenc {
+            margin: 2%;
+            width: 10%;
+            img {
+                width: 100%;
+            }
+        }
+        .emailc__enlacec {
+            color: $colorenlacecontactocoff;
+        }
+    }
+    .contactoc__telefonoc {
+        @include center-flex;
+        justify-content: flex-start;
+        @include breakpoint800 {
+            flex-direction: column;
+        }
+        .telefonoc__imagenc {
+            margin: 2%;
+            width: 10%;
+            img {
+                width: 100%;
+            } 
+        }
+        .telefonoc__enlacec {
+            color: $colorenlacecontactocoff;
+        }
+    }
+    .contactoc__facebookc {
+        @include center-flex;
+        justify-content: flex-start;
+        @include breakpoint800 {
+            flex-direction: column;
+        }
+        .facebookc__imagenc {
+            margin: 2%;
+            width: 10%;
+            img {
+                width: 100%;
+            }
+        }
+        .facebookc__enlacec {
+            color: $colorenlacecontactocoff;
+        }
+    }
+}

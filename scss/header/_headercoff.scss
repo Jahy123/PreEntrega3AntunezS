@@ -1,67 +1,71 @@
-.encabezado__logo {
-    grid-area: logo;
+.encabezadoc__logoc {
+    grid-area: logocoff;
     text-align: center;
     padding: 5%;
-    .logo__imagen {
+    .logoc__imagenc {
         width: 30vh;
+        @include fondo_elementos_header;
+        
     }
 }
-.encabezado__nav {
-    @include estr-header-nav-i;
+.encabezadoc__navc {
+    @include estr-header-nav-coff;
+    @include fondo_elementos_header;
+    
     @include breakpoint800 {
         top: 0;
         width: 100%;
+        background-color: $colorfondocoff;
     }
-    .nav__lista {
+    .navc__listac{
         @include breakpoint800 {
             @include center-flex;
-            background-color: #f4f4f4;
         }
-        .lista__item {
+        .listac__itemc {
             @include breakpoint800 {
                 @include center-flex;
             }
-            .item__ico {
-                @include tamiconosnav;
+            .itemc__enlacec {
                 @include breakpoint800 {
-                    width: 50%;            
+                @include center-flex;
                 }
-            }
-        }
-        .lista__item {
-            .item__enlace {
-                @include breakpoint800 {
-                    @include center-flex;
-                }
-                .enlace__ico {
+                .enlacec__icoc {
                     @include tamiconosnav;
                     @include breakpoint800 {
-                        width: 50%;            
-                    }
+                    width: 50%;            
+                }
                 }
             }
         }
-        .lista__item {
-            .item__enlace {
-                .enlace__ico {
+        .listac__itemc {
+            .itemc__icoc {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                }
+            }
+        }
+        .listac__itemc {
+            .itemc__enlacec {
+                .enlacec__icoc {
                     @include breakpoint800 {
                         width: 50%;            
                     }
                 }
             }
         }
-        .lista__item {
-            .item__enlace {
-                .enlace__ico {
+        .listac__itemc {
+            .itemc__enlacec {
+                .enlacec__icoc {
                     @include breakpoint800 {
                         width: 50%;            
                     }
                 }
             }
         }
-        .lista__item {
-            .item__enlace {
-                .enlace__ico {
+        .listac__itemc {
+            .itemc__enlacec {
+                .enlacec__icoc {
                     @include breakpoint800 {
                         width: 50%;            
                     }
@@ -69,12 +73,15 @@
             }
         }
     }
-
 }
-.encabezado__titulo {
-    grid-area: titulo;
+.encabezadoc__tituloc {
+    grid-area: titulocoff;
+    color: $colortxttitulocoff;
     @include center-flex;
     padding: 2%;
-    font-size: $titulo-font-size;
     @include font-titulos;
+   
+    h1 {
+        @include fondo_elementos_header;
+    }
 }

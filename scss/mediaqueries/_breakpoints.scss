@@ -1,5 +1,144 @@
+@mixin font-titulos {
+    @include breakpoint5000 {
+        font-size: $titulo-font-size*3;
+        }
+        @include breakpoint4200 {
+        font-size: $titulo-font-size*2.5;
+        }
+        @include breakpoint3400 {
+            font-size: $titulo-font-size*2;
+        }
+        @include breakpoint2600 {
+            font-size: $titulo-font-size*1.5;
+        }
+        @include breakpoint1800 {
+            font-size: $titulo-font-size;
+        }
+        @include breakpoint1000 {
+            font-size: $titulo-font-size/1.5;
+        }
+        @include breakpoint600 {
+            font-size: $titulo-font-size/2;
+        }
+        @include breakpoint450 {
+            font-size: $titulo-font-size/3;
+        }
+}
+@mixin font-subtitulos {
+    @include breakpoint5000 {
+        font-size: $subtitulo-font-size*3.5;
+        }
+        @include breakpoint4200 {
+        font-size: $subtitulo-font-size*3;
+        }
+        @include breakpoint3400 {
+            font-size: $subtitulo-font-size*2.5;
+        }
+        @include breakpoint2600 {
+            font-size: $subtitulo-font-size*2;
+        }
+        @include breakpoint1800 {
+            font-size: $subtitulo-font-size*1.5;
+        }
+        @include breakpoint1000 {
+            font-size: $subtitulo-font-size;
+        }
+        @include breakpoint600 {
+            font-size: $subtitulo-font-size/1.5;
+        }
+        @include breakpoint450 {
+            font-size: $subtitulo-font-size/2;
+        }
+}
+@mixin font-parrafos {
+    @include breakpoint5000 {
+        font-size: $parrafo-font-size*3.5;
+        }
+        @include breakpoint4200 {
+        font-size: $parrafo-font-size*3;
+        }
+        @include breakpoint3400 {
+            font-size: $parrafo-font-size*2.5;
+        }
+        @include breakpoint2600 {
+            font-size: $parrafo-font-size*2;
+        }
+        @include breakpoint1800 {
+            font-size: $parrafo-font-size*1.5;
+        }
+        @include breakpoint1000 {
+            font-size: $parrafo-font-size;
+        }
+        @include breakpoint600 {
+            font-size: $parrafo-font-size/1.5;
+        }
+        @include breakpoint450 {
+            font-size: $parrafo-font-size/2;
+        }
+}
+@mixin font-parrafos-ch {
+    @include breakpoint5000 {
+        font-size: $parrafo-font-size*3;
+        }
+        @include breakpoint4200 {
+        font-size: $parrafo-font-size*2.5;
+        }
+        @include breakpoint3400 {
+            font-size: $parrafo-font-size*2;
+        }
+        @include breakpoint2600 {
+            font-size: $parrafo-font-size*1.5;
+        }
+        @include breakpoint1800 {
+            font-size: $parrafo-font-size;
+        }
+        @include breakpoint1000 {
+            font-size: $parrafo-font-size/1.5;
+        }
+        @include breakpoint600 {
+            font-size: $parrafo-font-size/2;
+        }
+        @include breakpoint450 {
+            font-size: $parrafo-font-size/2.5;
+        }
+}
+@mixin font-subtitulos-ch {
+    @include breakpoint5000 {
+        font-size: $subtitulo-font-size*3;
+        }
+        @include breakpoint4200 {
+        font-size: $subtitulo-font-size*2.5;
+        }
+        @include breakpoint3400 {
+            font-size: $subtitulo-font-size*2;
+        }
+        @include breakpoint2600 {
+            font-size: $subtitulo-font-size*1.5;
+        }
+        @include breakpoint1800 {
+            font-size: $subtitulo-font-size;
+        }
+        @include breakpoint1000 {
+            font-size: $subtitulo-font-size/1.5;
+        }
+        @include breakpoint600 {
+            font-size: $subtitulo-font-size/2;
+        }
+        @include breakpoint450 {
+            font-size: $subtitulo-font-size/2.5;
+        }
+}
+
+
+
 @mixin breakpoint5000 {
     @media screen and (max-width: 5000px) {
+        @content;
+    }
+
+}
+@mixin breakpoint4200 {
+    @media screen and (max-width: 4200px) {
         @content;
     }
 
@@ -10,8 +149,26 @@
     }
 
 }
+@mixin breakpoint3400 {
+    @media screen and (max-width: 3400px) {
+        @content;
+    }
+
+}
+@mixin breakpoint2600 {
+    @media screen and (max-width: 2600px) {
+        @content;
+    }
+
+}
 @mixin breakpoint2500 {
     @media screen and (max-width: 2500px) {
+        @content;
+    }
+
+}
+@mixin breakpoint1800 {
+    @media screen and (max-width: 1800px) {
         @content;
     }
 
@@ -34,6 +191,12 @@
     }
 
 }
+@mixin breakpoint1000 {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+
+}
 
 @mixin breakpoint800 {
     @media screen and (max-width: 800px) {
@@ -50,6 +213,12 @@
 }
 @mixin breakpoint550 {
     @media screen and (max-width: 550px) {
+        @content;
+    }
+
+}
+@mixin breakpoint500 {
+    @media screen and (max-width: 500px) {
         @content;
     }
 

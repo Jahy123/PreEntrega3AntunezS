@@ -18,19 +18,34 @@ $enlacei__urli: blur(30px);
 .enlacei__urli:hover .urli__pi {
     display: none;
 }
-Animacion hover en los iconos de nav en index
+// Animacion hover en los iconos de nav en index
 
 .item__ico {
     transition: all 1s;
     &:hover{
-        background-color: $colorfonodiconrindx;
+        background-color: $colorfondoiconindx;
         max-width: 90%;
     }
 }
 .enlace__ico {
     transition: all 1s;
     &:hover{
-        background-color: $colorfonodiconrindx;
+        background-color: $colorfondoiconindx;
+        max-width: 90%;
+    }
+}
+// Animacion hover en los iconos de nav en coffemex
+.itemc__icoc {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfondoiconcoff;
+        max-width: 90%;
+    }
+}
+.enlacec__icoc {
+    transition: all 1s;
+    &:hover{
+        background-color: $colorfondoiconcoff;
         max-width: 90%;
     }
 }
@@ -48,4 +63,63 @@ Animacion hover en los iconos de nav en index
     animation-timing-function: ease-in-out;
     animation-duration: 10s;
     animation-delay: 5s;
+}
+// Animacion en fondo de preguntas coffemex al cumplirse :hover
+
+.informacionc__textoc {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.seccionc__informacionc--uno:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--uno:hover .informacionc__subtituloc {
+    display: none;
+}
+.seccionc__informacionc--dos:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(30%);
+    
+}
+.seccionc__informacionc--dos:hover .informacionc__subtituloc {
+    display: none;
+}
+.seccionc__informacionc--tres:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--tres:hover .informacionc__subc {
+    display: none;
+}
+.seccionc__informacionc--cuatro:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--cuatro:hover .informacionc__subc {
+    display: none;
+}
+.seccionc__informacionc--cinco:hover .informacionc__textoc {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(40%);
+    
+}
+.seccionc__informacionc--cinco:hover .informacionc__subc {
+    display: none;
 }

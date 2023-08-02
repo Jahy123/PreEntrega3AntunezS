@@ -7,15 +7,15 @@
         "mainindx"
         "footer";
         }
-    @include breakpoint200 {
-            height: 100vh;
-            grid-template-columns: 100%;
-            grid-template-rows: 30vh 60vh 10vh;
-            grid-template-areas:
-            "headerindx"
-            "mainindx"
-            "footer";
-        }
+    // @include breakpoint200 {
+    //         height: 100vh;
+    //         grid-template-columns: 100%;
+    //         grid-template-rows: 30vh 60vh 10vh;
+    //         grid-template-areas:
+    //         "headerindx"
+    //         "mainindx"
+    //         "footer";
+    //     }
     .body__encabezado {
         @include estr-body-header-i;
         
@@ -33,30 +33,28 @@
             grid-template-rows: 20vh 33vh 20vh;
             align-content: stretch;
         }
-        @include breakpoint200 {
-            grid-template-columns: 100%;
-            grid-template-rows: 5vh 10vh 15vh ;
-            grid-template-areas:
-            "nav"
-            "logo"
-            "titulo"
-            ;
-            @include center-grid;
-        }
+        // @include breakpoint200 {
+        //     grid-template-columns: 100%;
+        //     grid-template-rows: 5vh 10vh 15vh ;
+        //     grid-template-areas:
+        //     "nav"
+        //     "logo"
+        //     "titulo"
+        //     ;
+        //     @include center-grid;
+        // }
     }
     .body__maini {
         @include estr-body-main-i;
-        @include breakpoint200 {
-            grid-template-columns: 100%;
-            grid-template-rows: 30vh 30vh;
-        }
+        // @include breakpoint200 {
+        //     grid-template-columns: 100%;
+        //     grid-template-rows: 30vh 30vh;
+        // }
     }
     .body__footer {
-        @include center-grid;
+        @include center-flex;
         @include estr-body-footer-i;
-        @include breakpoint200 {
-            grid-template-columns: 100%;
-            grid-template-rows: 5vh 5vh;
-        }
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }

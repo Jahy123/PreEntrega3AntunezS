@@ -1,0 +1,44 @@
+.bodyc {
+    @include estr-body-coff;
+    .bodyc__encabezadoc {
+        @include estr-body-header-coff;
+        @include center-grid;
+        @include fondo_header;
+        @include breakpoint800 {
+            grid-template-rows: 25vh 37vh 37vh;
+            grid-template-areas: 
+            "navcoff navcoff navcoff"
+            ". logocoff ."
+            ". titulocoff ."
+            ;
+        }
+    }
+    .bodyc__principalc {
+        @include estr-body-main-coff;
+    }
+    .bodyc__seccioncontactoc {
+        @include estr-body-contacto-coff;
+        @include center-grid;
+        @include breakpoint800 {
+            grid-template-columns: 100%;
+            grid-template-rows: 40vh 60vh;
+            grid-template-areas:
+            "txtcontacoff"
+            "enlacescontacoff"
+        }
+        @include breakpoint500 {
+            grid-template-columns: 100%;
+            grid-template-rows: 25vh 40vh;
+            grid-template-areas:
+            "txtcontacoff"
+            "enlacescontacoff"
+        }
+    }
+    .bodyc__footerc {
+        @include estr-body-footer-coff;
+        @include center-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}
