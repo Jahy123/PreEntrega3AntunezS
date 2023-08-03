@@ -1,0 +1,33 @@
+.bodyb {
+    @include estr-body-bits;
+    .bodyb__encabezadob {
+        @include estr-body-header-bits;
+        @include center-grid;
+        @include fondo_header-bits;
+        @include breakpoint800 {
+            grid-template-rows: 25vh 37vh 37vh;
+            grid-template-areas: 
+            "navbits navbits navbits"
+            ". logobits ."
+            ". titulobits ."
+            ;
+        }
+    }
+    .bodyb__principalb {
+        @include estr-body-main-bits;
+    }
+    .bodyb__contactob {
+        grid-area: contactobits;
+        @include center-flex;
+        flex-direction: column;
+        background-color: $colorcontactobits;
+        
+    }
+    .bodyb__footerb {
+        @include estr-body-footer-bits;
+        @include center-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}

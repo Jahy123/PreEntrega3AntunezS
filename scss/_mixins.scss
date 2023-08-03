@@ -57,6 +57,22 @@
         ;
     }
 }
+@mixin estr-body-bits {
+    background-color: $colorfondobits;
+    width: 100%;
+    height: 639vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 420vh 100vh 20vh ;
+        template-areas:
+        "headerbits headerbits headerbits"
+        ". mainbits ."
+        ". contactobits ."
+        "footerbits footerbits footerbits"
+        ;
+    }
+}
 @mixin estr-body-header-i {
     display: grid;
     grid: {
@@ -90,6 +106,18 @@
         template-areas:
         "navyumm logoyumm ."
         "navyumm tituloyumm ."
+        ;
+    }
+}
+@mixin estr-body-header-bits {
+    display: grid;
+    grid: {
+        area: headerbits;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navbits logobits ."
+        "navbits titulobits ."
         ;
     }
 }
@@ -130,6 +158,19 @@
         template-areas:
         "seccunoyumm"
         "seccdosyumm";
+    }
+}
+@mixin estr-body-main-bits {
+    background-color: $colormainbits;
+    color: $colortxtmainbits;
+    display: grid;
+    grid: {
+        area: mainbits;
+        template-columns:  100%;
+        template-rows: 100vh 320vh;
+        template-areas:
+        "seccunobits"
+        "seccdosbits";
     }
 }
 @mixin estr-body-contacto-coff {
@@ -173,6 +214,11 @@
     background-color: $colorfooteryumm;
     color: $colortxtfooteryumm;
 }
+@mixin estr-body-footer-bits {
+    grid-area: footerbits;
+    background-color: $colorfooterbits;
+    color: $colortxtfooterbits;
+}
 @mixin estr-header-nav-i {
     grid-area: nav;
     position: fixed;
@@ -189,6 +235,13 @@
 }
 @mixin estr-header-nav-yumm {
     grid-area: navyumm;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-bits {
+    grid-area: navbits;
     position: fixed;
     top: 25vh;
     width: 5%;
@@ -224,6 +277,17 @@
         template-rows: 100%;
         template-areas:
         "seccunosub seccunoparr"
+        ;
+    }
+}
+@mixin estr-main-seccuno-bits {
+    display: grid;
+    grid: {
+        area: seccunobits;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunosubbits seccunoparrbits"
         ;
     }
 }
@@ -273,6 +337,24 @@
         "personalizacion"
         "precio"
         "ubica"
+        ;
+    }
+}
+@mixin estr-main-seccdos-bits{
+    background-color: $colorfondocoff;
+    color: $colortxtmainseccdoscoff;
+    display: grid;
+    grid: {
+        area: seccdosbits;
+        template-columns:  100%;
+        template-rows: 20vh 50vh 100vh 50vh 50vh 50vh;
+        template-areas:
+        "preguntassubbits"
+        "personaeventos"
+        "calidad"
+        "alimentos"
+        "ubicaciones"
+        "planes"
         ;
     }
 }
@@ -356,6 +438,13 @@
             position: center 79%;
         }
     }
+    @mixin fondo_header-bits {
+        background: {
+            image: url(../assets/images/fondobits.webp);
+            size: cover;
+            position: center 79%;
+        }
+    }
     @mixin fondo_elementos_header{
         backdrop-filter: blur(50px);
         background-color: #030b1291;
@@ -364,4 +453,8 @@
     @mixin fondo_elementos_header-yumm{
         backdrop-filter: blur(50px);
         background-color: #fffbec03;
+    }
+    @mixin fondo_elementos_header-bits{
+        backdrop-filter: blur(50px);
+        background-color: #e8b98f;
     }

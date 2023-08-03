@@ -1,0 +1,95 @@
+.encabezadob__logob {
+    grid-area: logobits;
+    text-align: center;
+    padding: 5%;
+    .logob__imagenb {
+        width: 50vh;
+        
+        @include breakpoint500 {
+            width: 30vh;
+        };
+        
+    }
+}
+.encabezadob__navb {
+    @include estr-header-nav-bits;
+    @include fondo_elementos_header-bits;
+    
+    @include breakpoint800 {
+        top: 0;
+        width: 100%;
+        background-color: $colorfondobits;
+    }
+    .navb__listab{
+        @include breakpoint800 {
+            @include center-flex;
+        }
+        .listab__itemb {
+            @include breakpoint800 {
+                @include center-flex;
+            }
+            .itemb__enlaceb {
+                @include breakpoint800 {
+                @include center-flex;
+                }
+                .enlaceb__icob {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                    width: 50%;            
+                }
+                }
+            }
+        }
+        .listab__itemb {
+            .itemb__enlaceb {
+                
+                .enlaceb__icob {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listab__itemb {
+            .enlaceb__icob {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                }
+            }
+        }
+        
+        .listab__itemb {
+            .itemb__enlaceb {
+                .enlaceb__icob {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listab__itemb {
+            .itemb__enlaceb {
+                .enlaceb__icob {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+    }
+}
+.encabezadob__titulob {
+    grid-area: titulobits;
+    color: $colortxttitulobits;
+    @include center-flex;
+    padding: 2%;
+    @include font-titulos;
+   
+    h1 {
+        @include fondo_elementos_header-bits;
+    }
+}

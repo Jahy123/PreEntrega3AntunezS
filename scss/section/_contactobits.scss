@@ -1,0 +1,13 @@
+.contactob__subb {
+    @include font-subtitulos;
+    color: $colortxtinfobits;
+    padding: 2% 5%;
+}
+.contactob__parrb {
+    @include font-parrafos;
+    color: $colortxtinfobits;
+    padding: 2% 5%;
+    a {
+        color: $colortxtenlacesbits;
+    }
+}

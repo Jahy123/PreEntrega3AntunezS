@@ -64,6 +64,21 @@ $enlacei__urli: blur(30px);
         max-width: 90%;
     }
 }
+// Animacion hover en los iconos de nav en bits
+.itemb__icob {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesbits;
+        max-width: 90%;
+    }
+}
+.enlaceb__icob {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesbits;
+        max-width: 90%;
+    }
+}
 // Animacion logo de index 
 @keyframes logo {
     0%{ width: 25vh;}
@@ -138,7 +153,7 @@ $enlacei__urli: blur(30px);
 .seccionc__informacionc--cinco:hover .informacionc__subc {
     display: none;
 }
-// 
+// Animacion en fondo de preguntas yummy al cumplirse :hover
 .informaciony__textoy {
     padding: 5%;
     width: 100%;
@@ -194,5 +209,63 @@ $enlacei__urli: blur(30px);
     
 }
 .secciony__informaciony--cinco:hover .informaciony__subtituloy {
+    display: none;
+}
+// Animacion en fondo de preguntas bits al cumplirse :hover
+.informacionb__textob {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.seccionb__informacionb--uno:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--uno:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--dos:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--dos:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--tres:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--tres:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--cuatro:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--cuatro:hover .informacionb__subtitulob {
+    display: none;
+}
+.seccionb__informacionb--cinco:hover .informacionb__textob {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.seccionb__informacionb--cinco:hover .informacionb__subtitulob {
     display: none;
 }

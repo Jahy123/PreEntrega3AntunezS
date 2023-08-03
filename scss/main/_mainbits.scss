@@ -1,0 +1,160 @@
+.principalb__seccb--uno {
+    padding: 5%;
+    @include estr-main-seccuno-bits;
+    @include breakpoint800 {
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh 25vh;
+        grid-template-areas: 
+        "seccunosubbits"
+        "seccunoparrbits";
+        align-content: center;
+    }
+    .seccb__subb {
+        grid-area: seccunosubbits;
+        padding: 5%;
+        @include center-flex;
+        @include font-subtitulos;
+    }
+    .seccb__parrb {
+        grid-area: seccunoparrbits;
+        padding: 5%;
+        @include center-flex;
+        @include font-parrafos;
+    }
+}
+.principalb__seccb--dos {
+    @include estr-main-seccdos-bits;
+    .seccb__textob {
+        grid-area: preguntassubbits;
+        background-color: $colorseccdosbits;
+        color: $colortxtinfobits;
+        @include center-flex;
+        .textob__subb {
+            @include font-subtitulos;
+        }
+    }
+    .seccionb__informacionb--uno{
+        grid-area: personaeventos;
+        background-image: url(../assets/images/eventos.webp);
+        background-size: cover;
+        background-position: center 64%;
+        @include center-flex;
+
+        .informacionb__subtitulob {
+            @include font-subtitulos;
+            background-color: $colorseccdosbits;
+            color: $colortxtinfobits;;
+
+        }
+        .informacionb__textob {
+            color: $colortxtinfoyumm;
+        }
+        .textob__listab {
+            @include font-parrafos;
+        }
+        .textob__parrafob {
+            @include font-parrafos;
+            
+        }
+    }
+    .seccionb__informacionb--dos {
+        grid-area: calidad;
+        @include center-flex;
+        background-image: url(../assets/images/calidad.webp);
+        background-size: cover;
+        background-position: center 65%;
+        .informacionb__subtitulob {
+        @include font-subtitulos;
+        background-color: $colorseccdosbits;
+        color: $colortxtinfobits;
+    }
+       .informacionb__textob {
+        color: $colortxtinfoyumm;
+       }
+        .textob__listab {
+            @include font-parrafos;
+        }
+        .textob__parrafob {
+            @include font-parrafos;
+            
+        }
+        .textob__parrafob {
+            @include font-parrafos;
+            
+        }
+    }
+    .seccionb__informacionb--tres {
+        grid-area: alimentos;
+        @include center-flex;
+        background-image: url(../assets/images/alimentos.webp);
+        background-size: cover;
+        background-position: center 47%;
+        .informacionb__subtitulob {
+            @include font-subtitulos;
+            background-color: $colorseccdosbits;
+            color: $colortxtinfobits;
+        }
+        .informacionb__textob {
+            color: $colortxtinfoyumm;
+            .textob__parrafob {
+                @include font-parrafos;
+            }
+        }
+    }
+    .seccionb__informacionb--cuatro {
+        grid-area: ubicaciones;
+        @include center-flex;
+        background-image: url(../assets/images/ubicaciones.webp);
+        background-size: cover;
+        background-position: center 38%;
+        .informacionb__subtitulob {
+            @include font-subtitulos;
+            background-color: $colorseccdosbits;
+            color: $colortxtinfobits;
+        }
+        .informacionb__textob {
+            color: $colortxtinfoyumm;
+            .textob__subb {
+                @include font-subtitulos-ch;
+            }
+            .textob__parrafob {
+                @include font-parrafos;
+            }
+            .textob__subb {
+                @include font-subtitulos-ch;
+            }
+            .textob__parrafob {
+                @include font-parrafos;
+            }
+        }
+    }
+    .seccionb__informacionb--cinco {
+        grid-area: planes;
+        background-image: url(../assets/images/presupuesto.webp);
+        background-size: cover;
+        background-position: center 18%;
+        @include center-flex;
+        .informacionb__subtitulob {
+            @include font-subtitulos;
+            background-color: $colorseccdosbits;
+            color: $colortxtinfobits;
+        }
+        .informacionb__textob {
+                color: $colortxtinfoyumm;
+                .textob__subb {
+                    @include font-subtitulos-ch;
+                }
+                .textob__parrafob {
+                    @include font-parrafos;
+                }
+                .textob__subb {
+                    @include font-subtitulos-ch;
+                }
+                .textob__parrafob {
+                    @include font-parrafos;
+                }
+            }
+        
+    }
+    
+}
