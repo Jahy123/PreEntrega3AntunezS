@@ -1,0 +1,13 @@
+.contactoy__suby {
+    @include font-subtitulos;
+    color: $colortxtcontactoyumm;
+    padding: 2% 5%;
+}
+.contactoy__parry {
+    @include font-parrafos;
+    color: $colortxtcontactoyumm;
+    padding: 2% 5%;
+    a {
+        color: $colortxtenlacesyumm;
+    }
+}

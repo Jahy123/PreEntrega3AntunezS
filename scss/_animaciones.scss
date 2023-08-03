@@ -35,6 +35,21 @@ $enlacei__urli: blur(30px);
     }
 }
 // Animacion hover en los iconos de nav en coffemex
+.itemy__icoy {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesyumm;
+        max-width: 90%;
+    }
+}
+.enlacey__icoy {
+    transition: all 1s;
+    &:hover{
+        background-color: $colortxtenlacesyumm;
+        max-width: 90%;
+    }
+}
+// Animacion hover en los iconos de nav en yummy
 .itemc__icoc {
     transition: all 1s;
     &:hover{
@@ -121,5 +136,63 @@ $enlacei__urli: blur(30px);
     
 }
 .seccionc__informacionc--cinco:hover .informacionc__subc {
+    display: none;
+}
+// 
+.informaciony__textoy {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.secciony__informaciony--uno:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--uno:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--dos:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--dos:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--tres:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--tres:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--cuatro:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--cuatro:hover .informaciony__subtituloy {
+    display: none;
+}
+.secciony__informaciony--cinco:hover .informaciony__textoy {
+    @include center-flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    backdrop-filter: contrast(50%);
+    
+}
+.secciony__informaciony--cinco:hover .informaciony__subtituloy {
     display: none;
 }

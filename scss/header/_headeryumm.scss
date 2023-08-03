@@ -1,35 +1,38 @@
-.encabezadoc__logoc {
-    grid-area: logocoff;
+.encabezadoy__logoy {
+    grid-area: logoyumm;
     text-align: center;
     padding: 5%;
-    .logoc__imagenc {
-        width: 30vh;
-        @include fondo_elementos_header;
+    .logoy__imageny {
+        width: 50vh;
+        @include fondo_elementos_header-yumm;
+        @include breakpoint500 {
+            width: 30vh;
+        };
         
     }
 }
-.encabezadoc__navc {
-    @include estr-header-nav-coff;
-    @include fondo_elementos_header;
+.encabezadoy__navy {
+    @include estr-header-nav-yumm;
+    @include fondo_elementos_header-yumm;
     
     @include breakpoint800 {
         top: 0;
         width: 100%;
-        background-color: $colorfondocoff;
+        background-color: $colorfondoyumm;
     }
-    .navc__listac{
+    .navy__listay{
         @include breakpoint800 {
             @include center-flex;
         }
-        .listac__itemc {
+        .listay__itemy {
             @include breakpoint800 {
                 @include center-flex;
             }
-            .itemc__enlacec {
+            .itemy__enlacey {
                 @include breakpoint800 {
                 @include center-flex;
                 }
-                .enlacec__icoc {
+                .enlacey__icoy {
                     @include tamiconosnav;
                     @include breakpoint800 {
                     width: 50%;            
@@ -37,17 +40,29 @@
                 }
             }
         }
-        .listac__itemc {
-            .itemc__icoc {
+        .listay__itemy {
+            .itemy__enlacey {
+                
+                .enlacey__icoy {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listay__itemy {
+            .enlacey__icoy {
                 @include tamiconosnav;
                 @include breakpoint800 {
                     width: 50%;
                 }
             }
         }
-        .listac__itemc {
-            .itemc__enlacec {
-                .enlacec__icoc {
+        
+        .listay__itemy {
+            .itemy__enlacey {
+                .enlacey__icoy {
                     @include tamiconosnav;
                     @include breakpoint800 {
                         width: 50%;            
@@ -55,19 +70,9 @@
                 }
             }
         }
-        .listac__itemc {
-            .itemc__enlacec {
-                .enlacec__icoc {
-                    @include tamiconosnav;
-                    @include breakpoint800 {
-                        width: 50%;            
-                    }
-                }
-            }
-        }
-        .listac__itemc {
-            .itemc__enlacec {
-                .enlacec__icoc {
+        .listay__itemy {
+            .itemy__enlacey {
+                .enlacey__icoy {
                     @include tamiconosnav;
                     @include breakpoint800 {
                         width: 50%;            
@@ -77,14 +82,14 @@
         }
     }
 }
-.encabezadoc__tituloc {
-    grid-area: titulocoff;
-    color: $colortxttitulocoff;
+.encabezadoy__tituloy {
+    grid-area: tituloyumm;
+    color: $colortxttituloyumm;
     @include center-flex;
     padding: 2%;
     @include font-titulos;
    
     h1 {
-        @include fondo_elementos_header;
+        @include fondo_elementos_header-yumm;
     }
 }

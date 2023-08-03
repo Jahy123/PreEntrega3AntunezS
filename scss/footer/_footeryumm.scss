@@ -1,0 +1,20 @@
+.footery__py {
+    @include font-parrafos-ch;
+}
+.footery__derechosautory {
+    @include font-parrafos-ch;
+    @include center-flex;
+    flex-direction: column;
+    .derechosautory__suby {
+    }
+    .derechosautory__parrafosy {
+        @include center-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 1%;
+    }
+    p a{
+        color: $colortxtenlacesyumm;
+    }
+}

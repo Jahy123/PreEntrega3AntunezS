@@ -1,0 +1,47 @@
+.bodyy {
+    @include estr-body-yumm;
+    .bodyy__encabezadoy {
+        @include estr-body-header-yumm;
+        @include center-grid;
+        @include fondo_header-yumm;
+        @include breakpoint800 {
+            grid-template-rows: 25vh 37vh 37vh;
+            grid-template-areas: 
+            "navyumm navyumm navyumm"
+            ". logoyumm ."
+            ". tituloyumm ."
+            ;
+        }
+    }
+    .bodyy__principaly {
+        @include estr-body-main-yumm;
+    }
+    .bodyy__contactoy {
+        grid-area: contactoyumm;
+        @include center-flex;
+        flex-direction: column;
+        // @include estr-body-contacto-yumm;
+        // @include center-grid;
+        // @include breakpoint800 {
+        //     grid-template-columns: 100%;
+        //     grid-template-rows: 40vh 60vh;
+        //     grid-template-areas:
+        //     "txtcontayumm"
+        //     "enlacescontayumm"
+        // }
+        // @include breakpoint500 {
+        //     grid-template-columns: 100%;
+        //     grid-template-rows: 25vh 40vh;
+        //     grid-template-areas:
+        //     "txtcontayumm"
+        //     "enlacescontayumm"
+        // }
+    }
+    .bodyy__footery {
+        @include estr-body-footer-yumm;
+        @include center-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}

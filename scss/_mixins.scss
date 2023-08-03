@@ -41,6 +41,22 @@
         ;
     }
 }
+@mixin estr-body-yumm {
+    background-color: $colorfondoyumm;
+    width: 100%;
+    height: 639vh;
+    display: grid;
+    grid: {
+        template-columns: 5% 90% 5%;
+        template-rows: 99vh 420vh 100vh 20vh ;
+        template-areas:
+        "headeryumm headeryumm headeryumm"
+        ". mainyumm ."
+        ". contactoyumm ."
+        "footeryumm footeryumm footeryumm"
+        ;
+    }
+}
 @mixin estr-body-header-i {
     display: grid;
     grid: {
@@ -62,6 +78,18 @@
         template-areas:
         "navcoff logocoff ."
         "navcoff titulocoff ."
+        ;
+    }
+}
+@mixin estr-body-header-yumm {
+    display: grid;
+    grid: {
+        area: headeryumm;
+        template-columns: 5% 90% 5%;
+        template-rows: 49vh 50vh;
+        template-areas:
+        "navyumm logoyumm ."
+        "navyumm tituloyumm ."
         ;
     }
 }
@@ -91,6 +119,19 @@
         "seccdoscoff";
     }
 }
+@mixin estr-body-main-yumm {
+    background-color: $colormainyumm;
+    color: $colortxtmainyumm;
+    display: grid;
+    grid: {
+        area: mainyumm;
+        template-columns:  100%;
+        template-rows: 100vh 320vh;
+        template-areas:
+        "seccunoyumm"
+        "seccdosyumm";
+    }
+}
 @mixin estr-body-contacto-coff {
     background-color: $colorcontactocoff;
     color: $colortxtcontactocoff;
@@ -104,6 +145,19 @@
         ;
     }
 }
+@mixin estr-body-contacto-yumm {
+    background-color: $colorcontactocoff;
+    color: $colortxtcontactocoff;
+    display: grid;
+    grid: {
+        area: contactoyumm;
+        template-columns: 60% 40%;
+        template-rows: 100vh;
+        template-areas:
+        "txtcontayumm enlacescontayumm"
+        ;
+    }
+}
 @mixin estr-body-footer-i {
     grid-area: footer;
     background-color: $colorfooterindx;
@@ -114,6 +168,11 @@
     background-color: $colorfootercoff;
     color: $colortxtfootercoff;
 }
+@mixin estr-body-footer-yumm {
+    grid-area: footeryumm;
+    background-color: $colorfooteryumm;
+    color: $colortxtfooteryumm;
+}
 @mixin estr-header-nav-i {
     grid-area: nav;
     position: fixed;
@@ -123,6 +182,13 @@
 }
 @mixin estr-header-nav-coff {
     grid-area: navcoff;
+    position: fixed;
+    top: 25vh;
+    width: 5%;
+    text-align: center;
+}
+@mixin estr-header-nav-yumm {
+    grid-area: navyumm;
     position: fixed;
     top: 25vh;
     width: 5%;
@@ -147,6 +213,17 @@
         template-rows: 100%;
         template-areas:
         "seccunocoffsub seccunocoffparr"
+        ;
+    }
+}
+@mixin estr-main-seccuno-yumm {
+    display: grid;
+    grid: {
+        area: seccunoyumm;
+        template-columns:  50% 50%;
+        template-rows: 100%;
+        template-areas:
+        "seccunosub seccunoparr"
         ;
     }
 }
@@ -178,6 +255,24 @@
         "reqlegcoff"
         "menuscoff"
         "prescoff"
+        ;
+    }
+}
+@mixin estr-main-seccdos-yumm{
+    background-color: $colorfondocoff;
+    color: $colortxtmainseccdoscoff;
+    display: grid;
+    grid: {
+        area: seccdosyumm;
+        template-columns:  100%;
+        template-rows: 20vh 50vh 100vh 50vh 50vh 50vh;
+        template-areas:
+        "preguntassub"
+        "eventos"
+        "menus"
+        "personalizacion"
+        "precio"
+        "ubica"
         ;
     }
 }
@@ -254,8 +349,19 @@
             position: 0 79%;
         }
     }
+    @mixin fondo_header-yumm {
+        background: {
+            image: url(../assets/images/fondoyummy.webp);
+            size: cover;
+            position: center 79%;
+        }
+    }
     @mixin fondo_elementos_header{
         backdrop-filter: blur(50px);
         background-color: #030b1291;
         border-radius: 9%;
+    }
+    @mixin fondo_elementos_header-yumm{
+        backdrop-filter: blur(50px);
+        background-color: #fffbec03;
     }

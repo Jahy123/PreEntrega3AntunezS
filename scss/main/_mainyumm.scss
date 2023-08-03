@@ -1,0 +1,151 @@
+.principaly__seccy--uno {
+    padding: 5%;
+    @include estr-main-seccuno-yumm;
+    @include breakpoint800 {
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh 25vh;
+        grid-template-areas: 
+        "seccunosub"
+        "seccunoparr";
+        align-content: center;
+    }
+    .seccy__suby {
+        grid-area: seccunosub;
+        padding: 5%;
+        @include center-flex;
+        @include font-subtitulos;
+    }
+    .seccy__parry {
+        grid-area: seccunoparr;
+        padding: 5%;
+        @include center-flex;
+        @include font-parrafos;
+    }
+}
+.prinicipaly__seccy--dos {
+    @include estr-main-seccdos-yumm;
+    .seccy__textoy {
+        grid-area: preguntassub;
+        background-color: $colorseccdosyumm;
+        color: $colortxtseccdosyumm;
+        @include center-flex;
+        .textoy__suby {
+            @include font-subtitulos;
+        }
+    }
+    .secciony__informaciony--uno{
+        grid-area: eventos;
+        background-image: url(../assets/images/eventos.webp);
+        background-size: cover;
+        background-position: 0 64%;
+        @include center-flex;
+
+        .informaciony__subtituloy {
+            @include font-subtitulos;
+            background-color: $colorseccdosyumm;
+            color: $colortxtseccdosyumm;;
+
+        }
+        .informaciony__textoy {
+            color: $colortxtinfoyumm;
+        }
+        .textoy__listay {
+            @include font-parrafos;
+        }
+        .textoy__parrafoy {
+            @include font-parrafos;
+            
+        }
+    }
+    .secciony__informaciony--dos {
+        grid-area: menus;
+        @include center-flex;
+        background-image: url(../assets/images/degustaciones.webp);
+        background-size: cover;
+        background-position: 0 65%;
+        .informaciony__subtituloy {
+        @include font-subtitulos;
+        background-color: $colorseccdosyumm;
+        color: $colortxtseccdosyumm;
+    }
+       .informaciony__textoy {
+        color: $colortxtinfoyumm;
+       }
+        .textoy__listay {
+            @include font-parrafos;
+        }
+        .textoy__parrafoy {
+            @include font-parrafos;
+            
+        }
+        .textoy__parrafoy {
+            @include font-parrafos;
+            
+        }
+    }
+    .secciony__informaciony--tres {
+        grid-area: personalizacion;
+        @include center-flex;
+        background-image: url(../assets/images/personalizacion.webp);
+        background-size: cover;
+        background-position: 0 47%;
+        .informaciony__subtituloy {
+            @include font-subtitulos;
+            background-color: $colorseccdosyumm;
+            color: $colortxtseccdosyumm;
+        }
+        .informaciony__textoy {
+            color: $colortxtinfoyumm;
+            .textoy__parrafoy {
+                @include font-parrafos;
+            }
+        }
+    }
+    .secciony__informaciony--cuatro {
+        grid-area: precio;
+        @include center-flex;
+        background-image: url(../assets/images/presupuesto.webp);
+        background-size: cover;
+        background-position: 0 38%;
+        .informaciony__subtituloy {
+            @include font-subtitulos;
+            background-color: $colorseccdosyumm;
+            color: $colortxtseccdosyumm;
+        }
+        .informaciony__textoy {
+            color: $colortxtinfoyumm;
+            .textoy__parrafoy {
+                @include font-parrafos;
+            }
+        }
+    }
+    .secciony__informaciony--cinco {
+        grid-area: ubica;
+        background-image: url(../assets/images/ubicaciones.webp);
+        background-size: cover;
+        background-position: 0 18%;
+        @include center-flex;
+        .informaciony__subtituloy {
+            @include font-subtitulos;
+            background-color: $colorseccdosyumm;
+            color: $colortxtseccdosyumm;
+        }
+        .informaciony__textoy {
+                color: $colortxtinfoyumm;
+                .textoy__suby {
+                    @include font-subtitulos-ch;
+                }
+                .textoy__parrafoy {
+                    @include font-parrafos;
+                }
+                .textoy__suby {
+                    @include font-subtitulos-ch;
+                }
+                .textoy__parrafoy {
+                    @include font-parrafos;
+                }
+            }
+        
+    }
+    
+}
