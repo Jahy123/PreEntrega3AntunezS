@@ -1,0 +1,26 @@
+.bodyct {
+    @include estr-body-cont;
+    .bodyct__encabezadoct {
+        @include estr-body-header-cont;
+        @include center-grid;
+        @include fondo_header-cont;
+        @include breakpoint800 {
+            grid-template-rows: 25vh 37vh 37vh;
+            grid-template-areas: 
+            "navcont navcont navcont"
+            ". logocont ."
+            ". titulocont ."
+            ;
+        }
+    }
+    .bodyct__principalct {
+        grid-area: maincont;
+    }
+    .bodyct__footerct {
+        @include estr-body-footer-cont;
+        @include center-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}

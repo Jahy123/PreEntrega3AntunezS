@@ -1,0 +1,96 @@
+.encabezadoct__logoct {
+    grid-area: logocont;
+    text-align: center;
+    padding: 5%;
+    .logoct__imagenct {
+        width: 50vh;
+        @include fondo_elementos_header-cont;
+        @include breakpoint500 {
+            width: 30vh;
+        };
+        
+    }
+}
+.encabezadoct__navct {
+    @include estr-header-nav-cont;
+    @include fondo_elementos_header-cont;
+    
+    @include breakpoint800 {
+        top: 0;
+        width: 100%;
+        background-color: $colorfondocont;
+    }
+    .navct__listact{
+        @include breakpoint800 {
+            @include center-flex;
+        }
+        .listact__itemct {
+            @include breakpoint800 {
+                @include center-flex;
+            }
+            .itemct__enlacect {
+                @include breakpoint800 {
+                @include center-flex;
+                }
+                .enlacect__icoct {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                    width: 50%;            
+                }
+                }
+            }
+        }
+        .listact__itemct {
+            .itemct__enlacect {
+                
+                .enlacect__icoct {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listact__itemct {
+            .itemct__enlacect {
+               .enlacect__icoct {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                }
+            } 
+            }
+            
+        }
+        
+        .listact__itemct {
+            .itemct__enlacect {
+                .enlacect__icoct {
+                    @include tamiconosnav;
+                    @include breakpoint800 {
+                        width: 50%;            
+                    }
+                }
+            }
+        }
+        .listact__itemct {
+            .itemct__icoct {
+                @include tamiconosnav;
+                @include breakpoint800 {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+.encabezadoct__tituloct {
+    grid-area: titulocont;
+    color: $colortxttitulocont;
+    @include center-flex;
+    padding: 2%;
+    @include font-titulos;
+   
+    h1 {
+        @include fondo_elementos_header-cont;
+    }
+}

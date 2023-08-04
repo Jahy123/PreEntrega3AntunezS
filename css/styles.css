@@ -5604,4 +5604,1749 @@
   color: #e8b98f;
 }
 
+.bodyct {
+  background-color: #ffffff;
+  width: 100%;
+  height: 219vh;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 99vh 100vh 20vh;
+  grid-template-areas: "headercont headercont headercont" ". maincont ." "footercont footercont footercont";
+}
+.bodyct .bodyct__encabezadoct {
+  display: grid;
+  grid-area: headercont;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 49vh 50vh;
+  grid-template-areas: "navcont logocont ." "navcont titulocont .";
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../assets/images/fondocontacto.webp);
+  background-size: cover;
+  background-position: center 51%;
+}
+@media screen and (max-width: 800px) {
+  .bodyct .bodyct__encabezadoct {
+    grid-template-rows: 25vh 37vh 37vh;
+    grid-template-areas: "navcont navcont navcont" ". logocont ." ". titulocont .";
+  }
+}
+.bodyct .bodyct__principalct {
+  grid-area: maincont;
+}
+.bodyct .bodyct__footerct {
+  grid-area: footercont;
+  background-color: #232c2e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.encabezadoct__logoct {
+  grid-area: logocont;
+  text-align: center;
+  padding: 5%;
+}
+.encabezadoct__logoct .logoct__imagenct {
+  width: 50vh;
+  backdrop-filter: blur(50px);
+  background-color: #c8b6a8;
+}
+@media screen and (max-width: 500px) {
+  .encabezadoct__logoct .logoct__imagenct {
+    width: 30vh;
+  }
+}
+
+.encabezadoct__navct {
+  grid-area: navcont;
+  position: fixed;
+  top: 25vh;
+  width: 5%;
+  text-align: center;
+  backdrop-filter: blur(50px);
+  background-color: #c8b6a8;
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct {
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+  width: 100%;
+  padding: 10%;
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+    width: 50%;
+  }
+}
+.encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+  width: 100%;
+  padding: 10%;
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+    width: 50%;
+  }
+}
+.encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+  width: 100%;
+  padding: 10%;
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+    width: 50%;
+  }
+}
+.encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+  width: 100%;
+  padding: 10%;
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct .itemct__enlacect .enlacect__icoct {
+    width: 50%;
+  }
+}
+.encabezadoct__navct .navct__listact .listact__itemct .itemct__icoct {
+  width: 100%;
+  padding: 10%;
+}
+@media screen and (max-width: 800px) {
+  .encabezadoct__navct .navct__listact .listact__itemct .itemct__icoct {
+    width: 50%;
+  }
+}
+
+.encabezadoct__tituloct {
+  grid-area: titulocont;
+  color: #192022;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+}
+@media screen and (max-width: 5000px) {
+  .encabezadoct__tituloct {
+    font-size: 6em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .encabezadoct__tituloct {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .encabezadoct__tituloct {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .encabezadoct__tituloct {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .encabezadoct__tituloct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .encabezadoct__tituloct {
+    font-size: 1.3333333333em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .encabezadoct__tituloct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .encabezadoct__tituloct {
+    font-size: 0.6666666667em;
+  }
+}
+.encabezadoct__tituloct h1 {
+  backdrop-filter: blur(50px);
+  background-color: #c8b6a8;
+}
+
+.principalct__formct {
+  display: grid;
+  grid-area: maincont;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60vh 40vh;
+  grid-template-areas: "datospersonalescont datoseventocont" "finalizarcont finalizarcont";
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: colortxtmaincont;
+}
+@media screen and (max-width: 800px) {
+  .principalct__formct {
+    grid-template-columns: 100%;
+    grid-template-rows: 35vh 45vh 20vh;
+    grid-template-areas: "datospersonalescont" "datoseventocont" "finalizarcont";
+    padding: 0;
+  }
+}
+.principalct__formct .formct__fieldct--1 {
+  grid-area: datospersonalescont;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .principalct__formct .formct__fieldct--1 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__legendct {
+  background-color: #c8b6a8;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__legendct {
+    padding: 1%;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__nombrect input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__edadct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__emailct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__telct input {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__telct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__estadoct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--1 .fieldct__ciudadct select {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--2 {
+  grid-area: datoseventocont;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .principalct__formct .formct__fieldct--2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__legendct {
+  background-color: #c8b6a8;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__legendct {
+    font-size: 0.8em;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__servicioct select {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__eventoct textarea {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__fechact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__fechact input {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct {
+    font-size: 1em;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+  border: 1px solid black;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__asistentesct input {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--2 .fieldct__comentariosct textarea {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--3 {
+  grid-area: finalizarcont;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--3 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .principalct__formct .formct__fieldct--3 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+  }
+}
+.principalct__formct .formct__fieldct--3 .fieldct__legendct {
+  background-color: #c8b6a8;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 1.9em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__legendct {
+    font-size: 0.8em;
+  }
+}
+.principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+  margin: 0 1% 0;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__cancelarct {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+  margin: 0 1% 0;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__borrarct {
+    font-size: 0.6em;
+  }
+}
+.principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+  margin: 0 1% 0;
+}
+@media screen and (max-width: 5000px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .principalct__formct .formct__fieldct--3 .fieldct__enviarct {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 5000px) {
+  .footerct__pct {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .footerct__pct {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .footerct__pct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .footerct__pct {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .footerct__pct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footerct__pct {
+    font-size: 0.6666666667em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footerct__pct {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footerct__pct {
+    font-size: 0.4em;
+  }
+}
+
+.footerct__derechosautorct {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 5000px) {
+  .footerct__derechosautorct {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 4200px) {
+  .footerct__derechosautorct {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 3400px) {
+  .footerct__derechosautorct {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .footerct__derechosautorct {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .footerct__derechosautorct {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footerct__derechosautorct {
+    font-size: 0.6666666667em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footerct__derechosautorct {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footerct__derechosautorct {
+    font-size: 0.4em;
+  }
+}
+.footerct__derechosautorct .derechosautorct__parrafosct {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.footerct__derechosautorct .derechosautorct__parrafosct p a {
+  color: #75675f;
+}
+
 /*# sourceMappingURL=styles.css.map */

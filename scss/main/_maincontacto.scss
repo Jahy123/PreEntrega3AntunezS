@@ -1,0 +1,231 @@
+.principalct__formct {
+    @include estr-main-cont;
+    @include center-grid;
+    color: colortxtmaincont;
+    @include breakpoint800 {
+        grid-template-columns: 100%;
+        grid-template-rows: 35vh 45vh 20vh;
+        grid-template-areas: 
+        "datospersonalescont"
+        "datoseventocont"
+        "finalizarcont";
+        padding: 0;
+    }
+    .formct__fieldct--1 {
+        grid-area: datospersonalescont;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        @include start-flex;
+        @include font-subtitulos-cont;
+        @include breakpoint800 {
+            @include center-flex;
+            padding: 1%;
+        }
+        .fieldct__legendct {
+            background-color: $colorfondolegen;
+            @include font-subtitulos-cont;
+            @include breakpoint800 {
+                padding: 1%;
+            }
+
+        }
+        .fieldct__nombrect {
+            @include font-parrafos-cont;
+            
+            label {
+                
+            }
+            input {
+                @include font-parrafos-cont-ch;
+                    border: 1px solid black;
+                }
+        }
+        .fieldct__edadct {
+            @include font-parrafos-cont;
+            label {
+                
+            }
+            input {
+                @include font-parrafos-cont-ch;
+                    border: 1px solid black;
+                }
+        }
+        .fieldct__emailct {
+            @include font-parrafos-cont;
+            label {
+                  
+            }
+            input {
+                @include font-parrafos-cont-ch;
+                    border: 1px solid black;
+                }
+
+        }
+        .fieldct__telct {
+            @include font-parrafos-cont;
+            label {
+                  
+            }
+            input {
+                @include font-parrafos-cont-ch;
+                    border: 1px solid black;
+                }
+        }
+        .fieldct__estadoct {
+            @include font-parrafos-cont;
+            label {
+                  
+            }
+            select { @include font-parrafos-cont-ch;
+                
+                    border: 1px solid black;
+                    option {
+                        
+                        
+                    }
+                    option {
+                        
+
+                    }
+                }
+        }
+        .fieldct__ciudadct {
+            @include font-parrafos-cont;
+            label {
+                  
+            }
+            select {
+                @include font-parrafos-cont-ch;;
+                    border: 1px solid black;
+                    option {
+                        
+                        
+                    }
+                    option {
+                        
+
+                    }
+                    option {
+                        
+                        
+                    }
+                    option {
+                        
+
+                    }
+                }
+        }
+    }
+    .formct__fieldct--2 {
+        grid-area: datoseventocont;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        @include start-flex;
+        @include font-subtitulos-cont;
+        @include breakpoint800 {
+            @include center-flex;
+            padding: 1%;
+        }
+        .fieldct__legendct {
+            background-color: $colorfondolegen;
+            @include font-subtitulos-cont;
+        }
+        .fieldct__servicioct {
+            @include font-parrafos-cont;
+            label {
+
+            }
+            select {
+                @include font-parrafos-cont-ch;
+                option {
+                    
+                }
+                option {
+
+                }
+            }
+            
+            margin-bottom: 2%
+        }
+        .fieldct__eventoct {
+            @include font-parrafos-cont;
+            @include start-flex;
+            margin-bottom: 2%;
+            label {
+
+            }
+            textarea {
+                @include font-parrafos-cont-ch;
+            }
+        }
+        .fieldct__fechact {
+            @include font-parrafos-cont;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 2%;
+            label {
+
+            }
+            input {
+                @include font-parrafos-cont-ch;
+            }
+            label {
+
+            }
+            input {
+                @include font-parrafos-cont-ch;
+            }
+        }
+        .fieldct__asistentesct {
+            @include font-parrafos-cont;
+            margin-bottom: 2%;
+            label {
+
+            }
+            input {
+                @include font-parrafos-cont-ch;
+                    border: 1px solid black;
+                }
+        }
+        .fieldct__comentariosct {
+            @include font-parrafos-cont;
+            @include start-flex;
+            margin-bottom: 2%;
+            label {
+
+            }
+            textarea {
+                @include font-parrafos-cont-ch;
+            }
+        }
+    }
+    .formct__fieldct--3 {
+        grid-area: finalizarcont;
+        padding: 2%;
+        @include center-flex;
+        @include font-subtitulos-cont;
+        @include breakpoint800 {
+            @include center-flex;
+            padding: 1%;
+        }
+        .fieldct__legendct {
+            background-color: $colorfondolegen;
+            @include font-subtitulos-cont;
+        }
+        .fieldct__cancelarct {
+            @include font-parrafos-cont-ch;
+            margin: 0 1% 0;
+        }
+        .fieldct__borrarct {
+            @include font-parrafos-cont-ch;
+            margin: 0 1% 0;
+        }
+        .fieldct__enviarct {
+            @include font-parrafos-cont-ch;
+            margin: 0 1% 0;
+        }
+    }
+}

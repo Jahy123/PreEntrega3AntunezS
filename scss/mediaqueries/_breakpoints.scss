@@ -128,6 +128,84 @@
             font-size: $subtitulo-font-size/2.5;
         }
 }
+@mixin font-subtitulos-cont {
+    @include breakpoint5000 {
+        font-size: 2.5em;
+        }
+        @include breakpoint4200 {
+        font-size: 2.3em;
+        }
+        @include breakpoint3400 {
+            font-size: 2.1em;
+        }
+        @include breakpoint2600 {
+            font-size:1.9em      
+        }
+        @include breakpoint1800 {
+            font-size: 1em;
+        }
+        @include breakpoint1000 {
+            font-size: 1em        
+        }
+        @include breakpoint600 {
+            font-size: .9em;
+        }
+        @include breakpoint450 {
+            font-size: .8em        
+        }
+}
+@mixin font-parrafos-cont {
+    @include breakpoint5000 {
+        font-size: 2em;
+        }
+        @include breakpoint4200 {
+        font-size: 1.8em;
+        }
+        @include breakpoint3400 {
+            font-size: 1.6em;
+        }
+        @include breakpoint2600 {
+            font-size: 1.4em;      
+        }
+        @include breakpoint1800 {
+            font-size: 1.2em;
+        }
+        @include breakpoint1000 {
+            font-size: 1.2em;        
+        }
+        @include breakpoint600 {
+            font-size: 1.2em;
+        }
+        @include breakpoint450 {
+            font-size: 1em        
+        }
+}
+@mixin font-parrafos-cont-ch {
+    @include breakpoint5000 {
+        font-size: 1em;
+        }
+        @include breakpoint4200 {
+        font-size: .9em;
+        }
+        @include breakpoint3400 {
+            font-size: .7em;
+        }
+        @include breakpoint2600 {
+            font-size: .6em;     
+        }
+        @include breakpoint1800 {
+            font-size: .6em;
+        }
+        @include breakpoint1000 {
+            font-size: .6em;         
+        }
+        @include breakpoint600 {
+            font-size: .6em;
+        }
+        @include breakpoint450 {
+            font-size: .6em;        
+        }
+}
 
 
 

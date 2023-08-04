@@ -1,0 +1,22 @@
+.footerct__pct {
+    @include font-parrafos-ch;
+}
+.footerct__derechosautorct {
+    @include font-parrafos-ch;
+    @include center-flex;
+    flex-direction: column;
+    .derechosautorct__subct {
+    }
+    .derechosautorct__parrafosct {
+        @include center-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 1%;
+        p a{
+            color: $colortxtenlacescont;
+        }
+    }
+    
+    
+}
